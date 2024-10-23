@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <style>
+      .head-1-Regiestration {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .div-Regiestration-1-heade-1 {
+        height: 96vh;
+    width: 568px;
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 17px 1px black;
+      }
+      .div-Regiestration-1-heade-1::before {
+        content: " ";
+    position: absolute;
+    background: url(./Image_index/aerial-view-mountain-covered-fog-beautiful-pink-sky.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:  97vh;;
+    width: 568px;
+    z-index: -1111;
+}
+      .div-2-Regiestration-head-1::before {
+        content: " ";
+    position: absolute;
+    background: linear-gradient(#00000024, #0000008f);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 96vh;
+    z-index: -11;
+    width: 567px;
+}
+      .div-second-Regiestration-1 {
+        display: flex;
+        justify-content: center;
+        height: 226px;
+        align-items: center;
+        border-bottom: 1px solid #ffffff45;
+      }
+      .div-second-Regiestration-1 h1 {
+        font-family: "Dancing Script", cursive;
+        font-optical-sizing: auto;
+        color: white;
+        font-size: 36px;
+        border-left: 8px solid #ffffff85;
+        padding: 6px 0px 0px 14px;
+        /* border-bottom: 1px solid; */
+        border-radius: 34px;
+      }
+      .div-third-Regiestration-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .div-third-Regiestration-1 h2 {
+        font-family: "Dancing Script", cursive;
+        font-optical-sizing: auto;
+        color: white;
+        font-size: 28px;
+        margin: 23px 0px 7px 0px;
+      }
+
+      .input-Regiestration {
+        width: 218px;
+    height: 31px;
+    border: none;
+    text-align: justify;
+    padding: 2px 0px 0px 10px;
+    font-style: italic;
+    font-family: ui-rounded;
+    border-radius: 4px;
+    margin: 25px 13px 23px 13px;
+    /* background: #8a2be247; */
+    /* color: white; */
+    box-shadow: 3px 2px 7px 3px black;
+
+      }
+      .div-form-button-Regiestration {
+        display: flex;
+        justify-content: center;
+      }
+
+      .div-form-button-Regiestration button {
+        width: 101px;
+        height: 29px;
+        text-align: center;
+        font-style: italic;
+        box-shadow: 3px 2px 7px 3px black;
+      }
+
+      .div-Regiestration-forgot-pass {
+        display: flex;
+        justify-content: space-between;
+        color: wheat;
+        font-size: 13px;
+        margin-bottom: 16px;
+      }
+
+      .icon-Regiestration {
+        position: relative;
+        right: 25px;
+        font-size: 14px;
+      }
+      .close-form-icon {
+        position: absolute;
+    right: 493px;
+    top: 18px;
+    /* background: red; */
+    color: white;
+    width: 21px;
+    /* text-align: center; */
+    /* height: 21px; */
+    font-size: 17px;
+    cursor: pointer;
+      }
+      .close-form-icon:hover{
+        text-shadow: 0px 1px 4px red;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header id="Regiestrationform">
+        <div class="head-1-Regiestration" id="closeRegiestrationForm" >
+        <div class="div-Regiestration-1-heade-1">
+          <div class="div-2-Regiestration-head-1">
+      <a href="/">       <i class="fa-solid fa-x close-form-icon" onclick="closeForm()"></i></a>
+          </div>
+          <div>
+            <div class="div-second-Regiestration-1">
+              <h1>Welcome</h1>
+            </div>
+            <div class="div-third-Regiestration-1">
+              <h2>Registration</h2>
+    
+              <div class="div-1-form-Regiestration-1">
+                <form style="">
+                    <div style="display: flex;">
+                    <div>
+                  <div>
+                    <input
+                      class="input-Regiestration"
+                      placeholder="Enter Your FullName"
+                      required
+                    />
+                 
+                  </div>
+                  <div>
+                    <input
+                      class="input-Regiestration"
+                      placeholder="Enter Your Email id "
+                      required
+                    />
+                 
+                  </div>
+                </div>
+<div>
+                  <div>
+                    <input
+                      class="input-Regiestration"
+                      placeholder="Enter Your Password "
+                      required
+                    />
+                    
+                  </div>
+                  <div>
+                    <input
+                      class="input-Regiestration"
+                      placeholder="Re-enter Your Password "
+                      required
+                    />
+                    
+                  </div>
+                </div>
+                  <div>
+            </div>
+            <button>Submit </button>
+                 
+                
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    
+
+
+
+        <script>
+        function closeForm(){
+                document.getElementById("closeRegiestrationForm").style.display="none"
+        }
+    </script>
+  </body>
+  
+</html>

@@ -15,15 +15,63 @@
     />
 
     <!-- Fontawsome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
     <script src="./index.js"></script>
 
-    <link href="https://unpkg.com/aos@2.3.0/dist/aos.css" rel="stylesheet">
-    
+    <link href="https://unpkg.com/aos@2.3.0/dist/aos.css" rel="stylesheet" />
   </head>
-  <body>
-    <nav class="nav_1" id="navbar_scroll" onscroll="headerScroll()">
-      <div class="nav-1-div-1">
+  <body id="maindbody">
+    <header id="Loginform">
+    <div class="head-1-login" id="closeLOginForm" >
+    <div class="div-login-1-heade-1">
+      <div class="div-2-login-head-1">
+  <a href="/">       <i class="fa-solid fa-x close-form-icon" onclick="closeForm()"></i></a>
+      </div>
+      <div>
+        <div class="div-second-login-1">
+          <h1>Welcome</h1>
+        </div>
+        <div class="div-third-login-1">
+          <h2>Login</h2>
+
+          <div class="div-1-form-login-1">
+            <form>
+              <div>
+                <input
+                  class="input-login"
+                  placeholder="Enter Your Emaid id "
+                  required
+                />
+                <i class="fa-regular fa-user icon-login"></i>
+              </div>
+              <div>
+                <input
+                  class="input-login"
+                  placeholder="Enter Your Password "
+                  required
+                />
+                <i class="fa-regular fa-eye-slash icon-login"></i>
+              </div>
+              <div class="div-login-forgot-pass">
+                <span><input type="checkbox" /> Remeber </span>
+                <span>Forgot password ?</span>
+              </div>
+              <div class="div-form-button-login"><button onclick="">Login</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+    <nav class="nav_1">
+      <div class="nav-1-div-1" id="navbarscroll">
         <div class="nav-1-div-2">
           <div class="div-log-1">
             <h1>J/</h1>
@@ -34,10 +82,16 @@
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="#About">About</a></li>
-            <li><a href="">Search</a></li>
-            <li>
-              <a href="">Sign</a><span class="span-1-nav-1"> </span
-              ><a href="">Login</a>
+            <li><a href="">Contact</a></li>
+            <li
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <a href="">Sign~up &nbsp;</a><span class="span-1-nav-1"> /</span
+              ><a href="#Loginform" onclick="loginPageOpen()">Login</a>
             </li>
           </ul>
         </div>
@@ -52,7 +106,7 @@
 
     <section class="sec-2" id="div_id_sec-2">
       <div class="div-1-sec-2">
-        <div  class="div-1-1-sec-1" >
+        <div class="div-1-1-sec-1">
           <div class="div-111-sec-1">
             <h4>String</h4>
           </div>
@@ -256,12 +310,11 @@
 
     <footer class="foot-1">
       <div class="div-1-foot">
-        <div class="nav-1-div-2" style="background-color: black;">
+        <div class="nav-1-div-2" style="background-color: black">
           <div class="div-log-1">
-            <h1 >J/</h1>
+            <h1>J/</h1>
             <span>{script}</span>
           </div>
-         
         </div>
         <div class="div-2-foot-1">
           <ul>
@@ -273,7 +326,7 @@
             <li>Help Center</li>
           </ul>
         </div>
-        
+
         <div class="div-3-foot-1">
           <ul>
             <h2>Java Script Docs</h2>
@@ -289,30 +342,39 @@
           <h2>Contact US</h2>
           <div>
             <p>Drop Your Mail Id we will rich to you !</p>
-            <form  onsubmit="contacatEmailId(event)">
-            <input placeholder="Enter your email" id="inputCoantactMail" type="email" required >
-            <button>Submit</button>
-          </form>
+            <form onsubmit="contacatEmailId(event)">
+              <input
+                placeholder="Enter your email"
+                id="inputCoantactMail"
+                type="email"
+                required
+              />
+              <button>Submit</button>
+            </form>
           </div>
-          <div class="div-icon-foot-1"><i class="fa-brands fa-linkedin-in"></i>
+          <div class="div-icon-foot-1">
+            <i class="fa-brands fa-linkedin-in"></i>
             <i class="fa-brands fa-google-drive"></i>
             <i class="fa-brands fa-js"></i>
-          <i class="fa-solid fa-folder"></i></div>
+            <i class="fa-solid fa-folder"></i>
+          </div>
         </div>
       </div>
-      <div style="text-align: center;color: black; font-style: italic; margin-top: 5px;" >
+      <div
+        style="
+          text-align: center;
+          color: black;
+          font-style: italic;
+          margin-top: 5px;
+        "
+      >
         <p>All the CopyRight &copy; has owned by j/{script}</p>
       </div>
     </footer>
- 
-    <!-- Slider JavaScript -->
 
-    <script src="https://unpkg.com/aos@2.3.0/dist/aos.js">
+    
 
-AOS.init({
-  duration: 1200,
-})
 
-    </script>
+     
   </body>
 </html>
