@@ -25,50 +25,152 @@
   </head>
   <body id="maindbody">
     <header id="Loginform">
-    <div class="head-1-login" id="closeLOginForm" >
-    <div class="div-login-1-heade-1">
-      <div class="div-2-login-head-1">
-  <a href="/">       <i class="fa-solid fa-x close-form-icon" onclick="closeForm()"></i></a>
-      </div>
-      <div>
-        <div class="div-second-login-1">
-          <h1>Welcome</h1>
-        </div>
-        <div class="div-third-login-1">
-          <h2>Login</h2>
+      <div class="head-1-login" id="closeLOginForm">
+        <div class="div-login-1-heade-1">
+          <div class="div-2-login-head-1">
+            <a href="/">
+              <i class="fa-solid fa-x close-form-icon" onclick="closeForm(event)"></i
+            ></a>
+          </div>
+          <div>
+            <div class="div-second-login-1">
+              <h1>Welcome</h1>
+            </div>
+            <div class="div-third-login-1">
+              <h2>Login</h2>
 
-          <div class="div-1-form-login-1">
-            <form>
-              <div>
-                <input
-                  class="input-login"
-                  placeholder="Enter Your Emaid id "
-                  required
-                />
-                <i class="fa-regular fa-user icon-login"></i>
+              <div class="div-1-form-login-1">
+                <form onsubmit="loginSuccsec(event)">
+                  <div style="margin-left: 11px;">
+                    <input
+                      class="input-login"
+                      placeholder="Enter Your Emaid id "
+                      required
+                      id="emailIdLogin"
+                    />
+                    <i class="fa-regular fa-user icon-login"></i>
+                  </div>
+                  <div style="margin-left: 11px;">
+                    <input
+                      class="input-login"
+                      placeholder="Enter Your Password "
+                      required
+                      id="PasswordLogin"
+                    />
+                    <i class="fa-regular fa-eye-slash icon-login"></i>
+                  </div>
+                  <div class="div-login-forgot-pass">
+                    <span><input type="checkbox" /> Remeber </span>
+                    <span>Forgot password ?</span>
+                  </div>
+                  <div style="text-align: center; color: green; margin: 12px; display: none;" id="login_Msg" >
+                    <p>Login successfully !</p> </div>
+                  
+                  <div class="div-form-button-login">
+                    <button>Login</button>
+                  </div>
+                </form>
               </div>
-              <div>
-                <input
-                  class="input-login"
-                  placeholder="Enter Your Password "
-                  required
-                />
-                <i class="fa-regular fa-eye-slash icon-login"></i>
-              </div>
-              <div class="div-login-forgot-pass">
-                <span><input type="checkbox" /> Remeber </span>
-                <span>Forgot password ?</span>
-              </div>
-              <div class="div-form-button-login"><button onclick="">Login</button></div>
-            </form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</header>
+    </header>
 
+    <header id="Regiestrationform">
+      <div class="head-1-Regiestration" id="closeRegiestrationForm">
+        <div class="div-Regiestration-1-heade-1">
+          <div class="div-2-Regiestration-head-1">
+            <a href="/">
+              <i
+                class="fa-solid fa-x close-form-registration-icon"
+                onclick="closeForm()"
+              ></i
+            ></a>
+          </div>
+          <div>
+            <div class="div-second-Regiestration-1">
+              <h1>Welcome</h1>
+            </div>
+            <div class="div-third-Regiestration-1">
+              <h2>Registration</h2>
 
+              <div class="div-1-form-Regiestration-1">
+                <form
+                  class="registartion-form"
+                  onsubmit="registartionLocaclSave(event)"
+                >
+                  <div style="margin-bottom:5px;">
+                    <div>
+                      <div>
+                        <input
+                          class="input-Regiestration"
+                          placeholder="Enter Your FullName"
+                          type="text"
+                          required
+                          id="input_fillname-registartion"
+                        />
+                      </div>
+                      <div>
+                        <input
+                          class="input-Regiestration"
+                          placeholder="Enter Your Email id "
+                          type="email"
+                          required
+                          id="input_Emailid-registartion"
+                          onblur="checkEmail()"
+                          onfocus="checkemail_1()"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <div>
+                        <input
+                          class="input-Regiestration"
+                          placeholder="Enter Your Password "
+                          type="password"
+                          required
+                          id="input_Password-registartion"
+                          onfocus="checkpassword()"
+                        />
+                      </div>
+                      <div>
+                        <input
+                          class="input-Regiestration"
+                          placeholder="Re-enter Your Password "
+                          type="password"
+                          required
+                          id="input_re-passwordcheck-registartion"
+                          onfocus="checkpassword()"
+                        />
+                      </div>
+                    </div>
+                    <div></div>
+                  </div>
+                  <p
+                    class="error_msg"
+                    id="error_msg"
+                  >
+                    The eamil is already Paresent !
+                  </p>
+                  <p
+                    class="error_msg_1"
+                    id="error_msg_1"
+                  >
+                    The both the Password is not match !
+                  </p>
+                  <div>
+               <button  class="btn-registration" id="btn_1_registration">
+                     Submit 
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <nav class="nav_1">
       <div class="nav-1-div-1" id="navbarscroll">
@@ -90,7 +192,9 @@
                 align-items: center;
               "
             >
-              <a href="">Sign~up &nbsp;</a><span class="span-1-nav-1"> /</span
+              <a href="#Regiestrationform" onclick="registrationPageOpen()"
+                >Sign~up &nbsp;</a
+              ><span class="span-1-nav-1"> /</span
               ><a href="#Loginform" onclick="loginPageOpen()">Login</a>
             </li>
           </ul>
@@ -104,14 +208,18 @@
     </section>
     <!--Card section first-->
 
-    <section class="sec-2" id="div_id_sec-2">
+    <section class="sec-2" id="div_id_sec-2" onclick="open">
       <div class="div-1-sec-2">
         <div class="div-1-1-sec-1">
           <div class="div-111-sec-1">
             <h4>String</h4>
           </div>
           <div class="div-2-sec-2">
-            <button>Check-In</button>
+            <button>
+              <a onclick="loginPageOpen()" href="#Loginform"
+                ><a onclick="loginPageOpen()" href="#Loginform">Check-In</a></a
+              >
+            </button>
           </div>
           <div class="div-3-sec-2">
             <p>
@@ -128,7 +236,9 @@
             <h4>Array</h4>
           </div>
           <div class="div-2-sec-2">
-            <button>Check-In</button>
+            <button>
+              <a onclick="loginPageOpen()" href="#Loginform">Check-In</a>
+            </button>
           </div>
           <div class="div-3-sec-2">
             <p>
@@ -143,7 +253,9 @@
             <h4>Object</h4>
           </div>
           <div class="div-2-sec-2">
-            <button>Check-In</button>
+            <button>
+              <a onclick="loginPageOpen()" href="#Loginform">Check-In</a>
+            </button>
           </div>
           <div class="div-3-sec-2">
             <p>
@@ -159,7 +271,9 @@
             <h4>Callback</h4>
           </div>
           <div class="div-2-sec-2">
-            <button>Check-In</button>
+            <button>
+              <a onclick="loginPageOpen()" href="#Loginform">Check-In</a>
+            </button>
           </div>
           <div class="div-3-sec-2">
             <p>
@@ -180,7 +294,9 @@
             <h4>Promises</h4>
           </div>
           <div class="div-2-sec-2">
-            <button>Check-In</button>
+            <button>
+              <a onclick="loginPageOpen()" href="#Loginform">Check-In</a>
+            </button>
           </div>
           <div class="div-3-sec-2">
             <p>
@@ -195,7 +311,9 @@
             <h4>Async/Await</h4>
           </div>
           <div class="div-2-sec-2">
-            <button>Check-In</button>
+            <button>
+              <a onclick="loginPageOpen()" href="#Loginform">Check-In</a>
+            </button>
           </div>
           <div class="div-3-sec-2">
             <p>
@@ -211,7 +329,9 @@
             <h4>MDN Docs</h4>
           </div>
           <div class="div-2-sec-2">
-            <button>Check-In</button>
+            <button>
+              <a onclick="loginPageOpen()" href="#Loginform">Check-In</a>
+            </button>
           </div>
           <div class="div-3-sec-2">
             <p>
@@ -372,9 +492,9 @@
       </div>
     </footer>
 
-    
-
-
-     
+    <script>
+      
+      
+    </script>
   </body>
 </html>

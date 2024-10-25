@@ -124,7 +124,7 @@
       }
       .close-form-icon {
         position: absolute;
-    right: 493px;
+    right: 409px;
     top: 18px;
     /* background: red; */
     color: white;
@@ -137,6 +137,28 @@
       .close-form-icon:hover{
         text-shadow: 0px 1px 4px red;
       }
+
+
+.registartion-form{
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.btn-registration{
+width: 150px;
+    height: 30px;
+    font-style: italic;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+
+
+
+
+
     </style>
   </head>
   <body>
@@ -155,7 +177,7 @@
               <h2>Registration</h2>
     
               <div class="div-1-form-Regiestration-1">
-                <form style="">
+                <form  class="registartion-form">
                     <div style="display: flex;">
                     <div>
                   <div>
@@ -195,9 +217,10 @@
                 </div>
                   <div>
             </div>
-            <button>Submit </button>
+            
                  
-                
+                    </div> 
+                  <div> <button class="btn-registration">Submit </button>    </div>  
                 </form>
               </div>
             </div>
@@ -214,6 +237,19 @@
         function closeForm(){
                 document.getElementById("closeRegiestrationForm").style.display="none"
         }
+
+
+        let registartionData = []
+        let a={
+          name :"aditya",
+          Email:"adi@123.gmail.com",
+          password:"122@gmail"
+        }
+        registartionData.push(a)
+        
+        localStorage.setItem("registardata",JSON.stringify(registartionData))
+        let m=localStorage.getItem("registardata")
+        console
     </script>
   </body>
   
