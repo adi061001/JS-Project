@@ -103,8 +103,8 @@ function registartionLocaclSave(event) {
     document.getElementById("input_Emailid-registartion").value = ""
     document.getElementById("input_Password-registartion").value = ""
     document.getElementById("input_re-passwordcheck-registartion").value = ""
-    // window.location.replace(
-    //   "./allMethodSecondindexpages/StringPage/String.html"
+    //window.location.replace(
+    //"./allMethodSecondindexpages/StringPage/String.html"
     // )
     window.location.reload()
   } else {
@@ -163,6 +163,19 @@ function loginSuccsec(event) {
 
     if (mailidcheck && passwordcheck) {
       document.getElementById("login_Msg").style.display = "block"
+      localStorage.setItem("emailIDLogin", loginEmail)
+      window.location.replace("./login.html")
+    } else {
+      document.getElementById("login_Msg").style.display = "block"
+      document.getElementById("login_Msg").style.color = "red"
+      document.getElementById("login_Msg").style.background = "white"
+      document.getElementById("login_Msg").innerText =
+        "Email Id or Password is Incorrect !"
     }
   }
 }
+window.history.forward()
+function noBack() {
+  window.history.forward()
+}
+noBack()
