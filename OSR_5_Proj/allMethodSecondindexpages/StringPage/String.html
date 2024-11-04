@@ -1,631 +1,529 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet" />
 
-     <!-- Fontawsome -->
-     <link
-     rel="stylesheet"
-     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-   />
+    <!-- Fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <!-- css File -->
+    <link rel="stylesheet" href="./String.css">
 
     <style>
 
-        *{
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-        }
-        .sec-2 {
-  position: relative;
-  z-index: 222;
-  /* bottom: 103px; */
-}
-
-.div-1-sec-2 {
-  display: flex;
-
-  justify-content: space-around;
-}
-
-.div-1-next-sec-2 {
-  display: flex;
-
-  justify-content: space-around;
-  position: relative;
-  z-index: 222;
-  
-}
-
-.div-1-1-sec-1 {
-    width: 182px;
-    height: 289px;
-  margin: 12px;
-  box-shadow: 1.1px 0.2px 13px 0px black;
-  cursor: pointer;
-}
-
-.div-111-sec-1 {
-  border: 1px solid;
-  width: 89px;
-  font-family: system-ui;
-  padding: 7px;
-
-  background: #645b8ff7;
-  color: white;
-}
-
-.div-111-sec-1::after {
-  content: " ";
-  background-image: url(/Image_index/6042470.jpg);
-  position: absolute;
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 156px;
-    height: 134px;
-  z-index: -1;
-}
-
-.div-11-third-sec-1 {
-  border: 1px solid;
-  width: 89px;
-  font-family: system-ui;
-  padding: 7px;
-
-  background: #645b8ff7;
-  color: white;
-}
-
-.div-11-third-sec-1::after {
-  content: " ";
-  background-image: url(/Image_index/hand-coding-concept-illustration/6463428.jpg);
-  position: absolute;
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
-  width: 156px;
-    height: 134px;
-  z-index: -1;
-}
-
-.div-1second-sec-1 {
-  border: 1px solid;
-  width: 89px;
-  font-family: system-ui;
-  padding: 7px;
-  background: #645b8ff7;
-  color: white;
-}
-
-.div-1second-sec-1::after {
-  content: " ";
-  background-image: url(/Image_index/pair-programming-concept-illustration/4548450.jpg);
-  position: absolute;
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
-  width: 156px;
-    height: 134px;
-  z-index: -1;
-}
-
-.div-1-fouth-sec-1 {
-  border: 1px solid;
-  width: 89px;
-  font-family: system-ui;
-  padding: 7px;
-
-  background: #645b8ff7;
-  color: white;
-}
-
-.div-1-fouth-sec-1::after {
-  content: " ";
-  background-image: url(/Image_index/fill-out-concept-illustration/5180200.jpg);
-  position: absolute;
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 156px;
-    height: 134px;
-  z-index: -1;
-}
-
-.sec-3 {
-  display: none;
-}
-
-.div-111-sec-2 {
-  border: 1px solid;
-  width: 89px;
-  font-family: system-ui;
-  padding: 7px;
-
-  background: #645b8ff7;
-  color: white;
-}
-
-.div-111-sec-2::after {
-  content: " ";
-  background-image: url(/Image_index/binary-code-concept-illustration/5643241.jpg);
-  position: absolute;
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
-  width: 156px;
-    height: 134px;
-  z-index: -1111;
-}
-
-.div-11-second-sec-2 {
-  border: 1px solid;
-  width: 122px;
-  font-family: system-ui;
-  padding: 7px;
-
-  background: #645b8ff7;
-  color: white;
-}
-
-.div-11-second-sec-2::after {
-  content: " ";
-  background-image: url(/Image_index/programmer-concept-illustration/3946714.jpg);
-  position: absolute;
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
-  width: 156px;
-    height: 134px;
-  z-index: -1111;
-}
-
-.div-11-third-sec-2 {
-  border: 1px solid;
-  width: 114px;
-  font-family: system-ui;
-  padding: 7px;
-
-  background: #645b8ff7;
-  color: white;
-}
-
-.div-11-third-sec-2::after {
-  content: " ";
-  background-image: url(/Image_index/programming-concept-illustration/11075021.jpg);
-  position: absolute;
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
-  width: 156px;
-    height: 134px;
-  z-index: -1111;
-}
-
-.div-2-sec-2 {
-  position: relative;
-  top: 148px;
-  text-align: center;
-}
-
-.div-2-sec-2 button {
-  width: 133px;
-  height: 29px;
-  background: #ffc73682;
-  border: none;
-  font-style: oblique;
-  font-weight: bolder;
-  border-left: 15px solid #686190;
-}
-
-.div-3-sec-2 {
-  position: relative;
-  top: 161px;
-  font-size: 12px;
-  text-align: center;
-  padding: 6px;
-}
-
-.sec-4-slider {
-  text-align: center;
-  position: relative;
- 
-}
-
-.last-div-slider-button-first {
-  border: 1px solid;
-  height: 18px;
-  width: 18px;
-  border-radius: 36px;
-  margin-right: 24px;
-  background: #362d6bbd;
-  color: #615a8900;
-}
-
-.last-div-slider-button_second {
-  border: 1px solid black;
-  height: 18px;
-  width: 18px;
-  border-radius: 36px;
-  margin-right: 24px;
-  background-color: white;
-}
-
-
-
-/* nav bar start  */
-
-.div-log-1 {
-  margin-left: 23px;
-  background: #c9a4ff52;
-  padding: 0px;
-  width: 128px;
-  text-align: center;
-}
-
-.div-log-1 H1 {
-  display: inline;
-  font-size: 46px;
-  margin: 0px;
-  padding: 0px;
-  color: white;
-}
-
-.div-log-1 span {
-  font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  color: white;
-  font-size: 27px;
-}
-
-.nav_1 {
-  background: transparent;
-}
-
-.nav-1-div-1 {
-    display: flex;
-    padding: 4px 0px;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    position: static;
-    z-index: 111111;
-    border-bottom: 1px solid #ffffff52;
-    BACKGROUND: BLACK;}
-
-.nav-1-div-2 img {
-  width: 85px;
-  height: 50px;
-  margin: 5px 0px 7px 27px;
-  filter: brightness(26);
-}
-
-
-.search-nav-1{
-    width: 115px;
-    margin-left: 10px;
-    border: none;
-    height: 18px;
-    border-radius: 2px;
-    padding: 2px;
-}
-
-
-
-
-
-.nav-1-div-3 ul {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-}
-
-.nav-1-div-3 ul li {
-  margin: 0px 27px 0px 25px;
-}
-
-.nav-1-div-3 ul li a {
-  font-size: 25px;
-  color: white;
-  text-decoration: none;
-  font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-}
-
-.span-1-nav-1 {
-}
-
-.nav-1-div-3 ul li a:hover {
-  text-shadow: 0px -1px 20px #bfd33e00;
-  /* text-decoration: underline; */
-  color: #c9e500;
-}
-
-.span-1-nav-1 {
-  position: absolute;
-  font-size: 44px;
-  margin: 0px;
-  padding: 0px;
-  right: 87Px;
-  color: white;
-}
-
-.logout-icon{
-    color: white;
-    margin-left: 5px;
-}
-
     </style>
 </head>
+
 <body>
+
+    <!-- For length Method  -->
+
+    <header class="head-1-string-len" id="header-string-method">
+        <div>
+            <i class="fa-solid fa-xmark icon-close-method" onclick="closemethodlen()"></i>
+            <div class="div-1-1-head-1-string-len">
+                <div style="text-align: center;">
+                    <h3>Title :</h3> <span>Length</span></div>
+                <div class="div-2-1-head-string">
+                    <h4>Description :-</h4>
+                    <div class="div-1-2-head-1-string">
+                        <p class="p-string-head-1">The length is used to find the length of words it gave you out put in numbers</p>
+                    </div>
+                    <div style="height: 36px;">
+                        <ul class="ul-1-head-1-string">
+                            <li>If there is space in words then it will count that space as a character</li>
+                            <li>will get out put in numbers</li>
+
+                        </ul>
+                    </div>
+                    <div class="div-form-head-string">
+                        <h2>Testing</h2>
+                        <form onsubmit="checkength(event)">
+                            <input type="text" placeholder="enter your input " id="stringlength">
+                            <button>Get length</button>
+                        </form>
+
+                        <div class="output-boc-div-string-head-1" style="color: black;">
+                            <h5 style="color: black;">OutPut :-</h5>
+
+                            <div class="output-last-div-string">
+                                <div style="overflow: auto;">
+                                    <p style="display: inline;">Input :-- </p>
+                                    <p id="inputUser" style="overflow:auto ; display: inline;"><br></p>
+
+                                </div>
+
+                                <div style="background-color: #ffe2a3; padding: 9px;">
+                                    <p style="margin-top: 15px" id="spacelength"></p>
+                                    <p>the length of input is :-- <span id="lengthoutput"> </span></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- For Concat Method  -->
+
+    <header class="head-1-string-len" id="header-Concat-method">
+        <div>
+            <i class="fa-solid fa-xmark icon-close-method" onclick="closemethodcon()"></i>
+            <div class="div-1-1-head-1-string-concat">
+                <div style="text-align: center;">
+                    <h3>Title :</h3> <span>Concat</span></div>
+                <div class="div-2-1-head-string">
+                    <h4>Description :-</h4>
+                    <div class="div-1-2-head-1-string">
+                        <p class="p-string-head-1">The method is used to Concat or Add to String and return new string it not change orignal string </p>
+                    </div>
+                    <div style="height: 36px;">
+                        <ul class="ul-1-head-1-string">
+                            <li>concat method take variable as permitters </li>
+                            <li>For example we have form in which you have first name and Last name you can add with the help concat</li>
+
+                        </ul>
+                    </div>
+                    <div class="div-form-head-concat">
+                        <h2>Testing</h2>
+                        <form style="display: flex; justify-content: center ; flex-direction: column ;align-items: center;" onsubmit="checkConcat(event)">
+                            <input type="text" placeholder="enter your FirstName  " id="stringConcatFirst">
+                            <input type="text" placeholder="enter your LastName " id="stringlConcatLast">
+                            <input type="email" placeholder="enter your Email " id="stringConcatEmail">
+                            <div><button>Get Output</button></div>
+                        </form>
+
+                        <div class="output-boc-div-string-head-1" style="color: black;">
+                            <h5 style="color: black;">OutPut :-</h5>
+
+                            <div class="output-last-div-string">
+                                <p id="concatfirstname"></p>
+                                <p id="concatemail"></p>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+
+    </header>
+
+
+
+
+
+
+
+
 
     <nav class="nav_1">
         <div class="nav-1-div-1" id="navbarscroll">
-          <div class="nav-1-div-2">
-            <div class="div-log-1">
-              <h1>J/</h1>
-              <span>{script}</span>
+            <div class="nav-1-div-2">
+                <div class="div-log-1">
+                    <h1>J/</h1>
+                    <span>{script}</span>
+                </div>
             </div>
-          </div>
-          <div class="nav-1-div-3">
-            <ul>
-              <li><a href="/">Home</a></li>
-              <li style="display: flex; justify-content: center;align-items: center;"><a >Search</a> </li>
-              <li><a >Logout</a> <i class="fa-solid fa-right-from-bracket logout-icon" ></i></li> 
-              
-            
-            </ul>
-          </div>
+            <div class="nav-1-div-3">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li style="display: flex; justify-content: center;align-items: center;"><a>Search</a> </li>
+                    <li><a>Logout</a> <i class="fa-solid fa-right-from-bracket logout-icon"></i></li>
+
+
+                </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
 
 
 
     <section class="sec-2" id="div_id_sec-2" onclick="open">
         <div class="div-1-sec-2">
-          <div class="div-1-1-sec-1">
-            <div class="div-111-sec-1">
-              <h4>String</h4>
-            </div>
-            <div class="div-2-sec-2">
-              <button>
-                <a onclick="loginPageOpen()" href="#Loginform"
-                  ><a onclick="loginPageOpen()" href="#Loginform">Check-In</a></a
+
+            <div class="div-1-1-sec-1">
+                <div class="div-111-sec-1">
+                    <h4>Length</h4>
+                </div>
+                <div class="div-2-sec-2">
+                    <button onclick="openLengthstring()">
+                
+                  <a >Check-In</a></a
                 >
               </button>
+                </div>
+                <div class="div-3-sec-2">
+                    <p>
+                        the Length is used to find length of character if you put a single space it will count it as character
+
+                    </p>
+                    <ul style="list-style: none; margin: 31px 0px 0px 0px; ">
+                        <li>
+                            <h3>1- length</h3>
+                        </li>
+
+
+                    </ul>
+                </div>
             </div>
-            <div class="div-3-sec-2">
-              <p>
-                A string is a sequence of one or more characters that may consist
-                of letters, numbers, or symbols. Strings in JavaScript are
-                
-              </p>
-            </div>
-          </div>
-  
-          <div class="div-1-1-sec-1">
-            <div class="div-1second-sec-1">
-              <h4>Array</h4>
-            </div>
-            <div class="div-2-sec-2">
-              <button>
-                <a onclick="loginPageOpen()" href="#Loginform">Check-In</a>
+
+
+            <div class="div-1-1-sec-1">
+                <div class="div-11-third-sec-1">
+                    <h4>Concat()</h4>
+                </div>
+                <div class="div-2-sec-2">
+                    <button onclick="openConcatstring()">
+                <a >Check-In</a>
               </button>
+                </div>
+                <div class="div-3-sec-2">
+                    <p>
+                        The method is used to concat or add two string into another variable
+                    </p>
+                    <ul style="list-style: none; margin: 31px 0px 0px 0px; ">
+                        <li>
+                            <h3>1- concat(varName )</h3>
+                        </li>
+
+
+                    </ul>
+                </div>
             </div>
-            <div class="div-3-sec-2">
-              <p>
-                An array in JavaScript is a type of global object used to store
-                
-              </p>
-            </div>
-          </div>
-          <div class="div-1-1-sec-1">
-            <div class="div-11-third-sec-1">
-              <h4>Object</h4>
-            </div>
-            <div class="div-2-sec-2">
-              <button>
-                <a onclick="loginPageOpen()" href="#Loginform">Check-In</a>
-              </button>
-            </div>
-            <div class="div-3-sec-2">
-              <p>
-                An ob value can be a function, in which case the property is known as a
-                method.
-              </p>
-            </div>
-          </div>
-          <div class="div-1-1-sec-1">
-            <div class="div-1-fouth-sec-1">
-              <h4>Callback</h4>
-            </div>
-            <div class="div-2-sec-2">
-              <button>
-                <a onclick="loginPageOpen()" href="#Loginform">Check-In</a>
-              </button>
-            </div>
-            <div class="div-3-sec-2">
-              <p>
-                A JavaScript callback is a function which is to be executed after
-                a
-              </p>
-            </div>
-          </div>
 
 
 
-          <div class="div-1-1-sec-1">
-            <div class="div-111-sec-2">
-              <h4>Promises</h4>
-            </div>
-            <div class="div-2-sec-2">
-              <button>
-                <a onclick="loginPageOpen()" href="#Loginform">Check-In</a>
+
+            <div class="div-1-1-sec-1">
+                <div class="div-111-sec-2">
+                    <h4>Split()</h4>
+                </div>
+                <div class="div-2-sec-2">
+                    <button>
+                <a >Check-In</a>
               </button>
+                </div>
+                <div class="div-3-sec-2">
+                    <p>
+                        The split method is used to split all the words and return a new array into single character
+                    </p>
+                    <ul style="list-style: none; margin: 31px 0px 0px 0px; ">
+                        <li>
+                            <h3>1- split("")</h3>
+                        </li>
+
+
+                    </ul>
+                </div>
             </div>
-            <div class="div-3-sec-2">
-              <p>
-                A promise in JavaScript is an object that represents the eventual
-              
-              </p>
-            </div>
-          </div>
-          <div class="div-1-1-sec-1">
-            <div class="div-111-sec-2">
-              <h4>Promises</h4>
-            </div>
-            <div class="div-2-sec-2">
-              <button>
-                <a onclick="loginPageOpen()" href="#Loginform">Check-In</a>
+            <div class="div-1-1-sec-1">
+                <div class="div-111-sec-2">
+                    <h4>Slice()</h4>
+                </div>
+                <div class="div-2-sec-2">
+                    <button>
+                <a >Check-In</a>
               </button>
+                </div>
+                <div class="div-3-sec-2">
+                    <p>
+                        When we have to extart particular words from string we have slice method retrun new String
+
+                    </p>
+                    <ul style="list-style: none; margin: 19px 0px 0px 0px; ">
+                        <li>
+                            <h3>1-slice(startInd,endInd)</h3>
+                        </li>
+
+
+                    </ul>
+                </div>
             </div>
-            <div class="div-3-sec-2">
-              <p>
-                A promise in JavaScript is an object that represents the eventual
-              
-              </p>
+
+
+            <div class="div-1-1-sec-1">
+                <div class="div-11-third-sec-2">
+                    <h4>Charcodeat()
+                    </h4>
+                </div>
+                <div class="div-2-sec-2">
+                    <button>
+                <a >Check-In</a>
+              </button>
+                </div>
+                <div class="div-3-sec-2">
+                    <p>
+                        The method returns a UTF-16 code just you have to give index value and it code value
+                    </p>
+                    <ul style="list-style: none; margin: 31px 0px 0px 0px; ">
+                        <li>
+                            <h3>1-charCodeAt(indexvalue)</h3>
+                        </li>
+
+
+                    </ul>
+                </div>
             </div>
-          </div>
-         
+
+            <div class="div-1-1-sec-1">
+                <div class="div-11-second-sec-2">
+                    <h4>Charat()</h4>
+                </div>
+                <div class="div-2-sec-2">
+                    <button>
+                <a >Check-In</a>
+              </button>
+                </div>
+                <div class="div-3-sec-2">
+                    <p>
+                        When we have have to find at index number which charact is persent you can check with chartat method
+                    </p>
+                    <ul style="list-style: none; margin: 15px 0px 0px 0px; ">
+                        <li>
+                            <h3>1- charat(indexvalue)</h3>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <div class="div-1-1-sec-1">
+                <div class="div-11-third-sec-2">
+                    <h4>includes()</h4>
+                </div>
+                <div class="div-2-sec-2">
+                    <button>
+                <a >Check-In</a>
+              </button>
+                </div>
+                <div class="div-3-sec-2">
+                    <p>
+                        The method is used to check the particuler word is persent or not return boolen value
+                    </p>
+                    <ul style="list-style: none; margin: 31px 0px 0px 0px; ">
+                        <li>
+                            <h3>1-includes(word,indvalue)</h3>
+                        </li>
+
+
+
+
+                        </u>
+                </div>
+            </div>
+
         </div>
-      </section>
+    </section>
 
 
 
     <section class="sec-3" id="div_id_sec-3">
         <div class="div-1-next-sec-2">
-       
-          <div class="div-1-1-sec-1">
-            <div class="div-11-second-sec-2">
-              <h4>Async/Await</h4>
-            </div>
-            <div class="div-2-sec-2">
-              <button>
-                <a onclick="loginPageOpen()" href="#Loginform">Check-In</a>
+            <div class="div-1-1-sec-1">
+                <div class="div-11-third-sec-2">
+                    <h4>Repeat()</h4>
+                </div>
+                <div class="div-2-sec-2">
+                    <button>
+                <a >Check-In</a>
               </button>
+                </div>
+                <div class="div-3-sec-2">
+                    <p>
+                        when ever we need to Repeat the words of string we use Repeat method wich take number how much time you have to Repeat
+                    </p>
+                    <ul style="list-style: none; margin: 19px 0px 0px 0px; ">
+                        <li>
+                            <h3>1- repeat(number how much time)</h3>
+                        </li>
+
+
+                    </ul>
+                </div>
             </div>
-            <div class="div-3-sec-2">
-              <p>
-             ng promises. By enabling asynchronous
-                code to appear synchronous.
-              </p>
-            </div>
-          </div>
-  
-          <div class="div-1-1-sec-1">
-            <div class="div-11-third-sec-2">
-              <h4>MDN Docs</h4>
-            </div>
-            <div class="div-2-sec-2">
-              <button>
-                <a onclick="loginPageOpen()" href="#Loginform">Check-In</a>
+
+
+
+            <div class="div-1-1-sec-1">
+                <div class="div-11-third-sec-2">
+                    <h4>Match</h4>
+                </div>
+                <div class="div-2-sec-2">
+                    <button>
+                <a >Check-In</a>
               </button>
+                </div>
+                <div class="div-3-sec-2">
+                    <p>
+                        the match method use to search in string and retrun new array which work case sensistive
+                    </p>
+                    <ul style="list-style: none; margin: 31px 0px 0px 0px; ">
+                        <li>
+                            <h3>1- match()</h3>
+                        </li>
+                        <li>
+                            <h3>2- matchall()</h3>
+                        </li>
+
+
+
+                    </ul>
+                </div>
             </div>
-            <div class="div-3-sec-2">
-              <p>
-                Mincluding CSS, HTML, JavaScript, and
-                Web APIs.
-              </p>
-            </div>
-          </div>
-          <div class="div-1-1-sec-1">
-            <div class="div-11-third-sec-2">
-              <h4>MDN Docs</h4>
-            </div>
-            <div class="div-2-sec-2">
-              <button>
-                <a onclick="loginPageOpen()" href="#Loginform">Check-In</a>
+
+            <div class="div-1-1-sec-1">
+                <div class="div-11-third-sec-2">
+                    <h4>Index</h4>
+                </div>
+                <div class="div-2-sec-2">
+                    <button>
+                <a >Check-In</a>
               </button>
+                </div>
+                <div class="div-3-sec-2">
+                    <p>
+                        Whenever we need to find index value of character we use two methods are :--
+
+
+                    </p>
+                    <ul style="list-style: none; margin: 31px 0px 0px 0px; ">
+                        <li>
+                            <h3>1- indexOf()</h3>
+                        </li>
+                        <li>
+                            <h3>2- lastindexOf()</h3>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
-            <div class="div-3-sec-2">
-              <p>
-                Mincluding CSS, HTML, JavaScript, and
-                Web APIs.
-              </p>
-            </div>
-          </div>
-          <div class="div-1-1-sec-1">
-            <div class="div-11-third-sec-2">
-              <h4>MDN Docs</h4>
-            </div>
-            <div class="div-2-sec-2">
-              <button>
-                <a onclick="loginPageOpen()" href="#Loginform">Check-In</a>
+            <div class="div-1-1-sec-1">
+                <div class="div-1second-sec-1">
+                    <h4>Upper/Down</h4>
+                </div>
+                <div class="div-2-sec-2">
+                    <button>
+                <a >Check-In</a>
               </button>
+                </div>
+                <div class="div-3-sec-2">
+                    <p>
+                        Whenever we need to have to change lowecase words to Uppercase or to lowecase </p>
+                    <ul style="list-style: none; margin: 31px 0px 0px 0px; ">
+                        <li>
+                            <h3>1- toUpperCase()</h3>
+                        </li>
+                        <li>
+                            <h3>2- toLowerCase()</h3>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
-            <div class="div-3-sec-2">
-              <p>
-                Mincluding CSS, HTML, JavaScript, and
-                Web APIs.
-              </p>
+            <div class="div-1-1-sec-1">
+                <div class="div-1-fouth-sec-1">
+                    <h4>Trim</h4>
+                </div>
+                <div class="div-2-sec-2">
+                    <button>
+                <a >Check-In</a>
+              </button>
+                </div>
+                <div class="div-3-sec-2">
+                    <p>
+                        I is used to remove all the space from start and the end and it will remove single space between words only
+                    </p>
+                    <ul style="list-style: none; margin: 17px 0px 0px 0px; ">
+                        <li>
+                            <h3>1- trim()</h3>
+                        </li>
+                        <li>
+                            <h3>2- trimStart()</h3>
+                        </li>
+                        <li>
+                            <h3>3- trimEnd()</h3>
+                        </li>
+
+
+                    </ul>
+                </div>
             </div>
-          </div>
+            <div class="div-1-1-sec-1">
+                <div class="div-11-third-sec-2">
+                    <h4>Replace()</h4>
+                </div>
+                <div class="div-2-sec-2">
+                    <button>
+                <a >Check-In</a>
+              </button>
+                </div>
+                <div class="div-3-sec-2">
+                    <p>
+                        when we need to change single word from string we use replce method
+                    </p>
+                    <ul style="list-style: none; margin: 31px 0px 0px 0px; ">
+                        <li>
+                            <h3>1- replace(persent word,replce word)</h3>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <div class="div-1-1-sec-1">
+                <div class="div-11-third-sec-2">
+                    <h4>Replaceall()</h4>
+                </div>
+                <div class="div-2-sec-2">
+                    <button>
+                <a >Check-In</a>
+              </button>
+                </div>
+                <div class="div-3-sec-2">
+                    <p>
+                        when we need to change single word from whole string we use replce method
+                    </p>
+                    <ul style="list-style: none; margin: 31px 0px 0px 0px; ">
+                        <li>
+                            <h3>1- replaceall(persent word,replce word)</h3>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
         </div>
-      </section>
-  
-      <!-- Slider button Section -->
-      <section class="sec-4-slider">
+    </section>
+
+    <!-- Slider button Section -->
+    <section class="sec-4-slider">
         <div class="last-div-slider">
-          <button
-            id="last-div-slider-button-first"
-            class="last-div-slider-button-first"
-            onclick="slideChange_First()"
-          ></button>
-          <button
-            id="last-div-slider-button_second"
-            class="last-div-slider-button_second"
-            onclick="slideChange_Second()"
-          ></button>
+            <button id="last-div-slider-button-first" class="last-div-slider-button-first" onclick="slideChange_First()"></button>
+            <button id="last-div-slider-button_second" class="last-div-slider-button_second" onclick="slideChange_Second()"></button>
         </div>
-      </section>
-    <script>
-        //card slider
+    </section>
 
-function slideChange_First() {
-  document.getElementById("div_id_sec-2").style.display = "block"
 
-  document.getElementById("div_id_sec-3").style.display = "none"
-  document.getElementById("last-div-slider-button-first").style.background =
-    "#362d6bbd"
 
-  document.getElementById("last-div-slider-button_second").style.background =
-    "white"
-  document.getElementById("last-div-slider-button_second").style.border =
-    "1px solid black"
-  document.getElementById("last-div-slider-button-first").style.border = "none"
-}
-function slideChange_Second() {
-  document.getElementById("div_id_sec-2").style.display = "none"
-  document.getElementById("div_id_sec-3").style.display = "block"
-  document.getElementById("last-div-slider-button-first").style.background =
-    "white"
-  document.getElementById("last-div-slider-button_second").style.background =
-    "#362d6bbd"
 
-  document.getElementById("last-div-slider-button_second").style.border = "none"
-  document.getElementById("last-div-slider-button-first").style.border =
-    "1px solid black"
-}
+    <script src="./String.js">
     </script>
 </body>
+
 </html>
