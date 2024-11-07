@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Js Project</title>
-    <link rel="stylesheet" href="./index.css" />
+    <title>Login Project</title>
+    <link rel="stylesheet" href="./login.css" />
 
     <!-- Font CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,146 +20,25 @@
 </head>
 
 <body id="maindbody">
-    <header id="Loginform">
-        <div class="head-1-login" id="closeLOginForm">
-            <div class="div-login-1-heade-1">
-                <div class="div-2-login-head-1">
-                    <a href="/">
-                        <i class="fa-solid fa-x close-form-icon" onclick="closeForm(event)"></i
-            ></a>
-          </div>
-          <div>
-            <div class="div-second-login-1">
-              <h1>Welcome</h1>
-            </div>
-            <div class="div-third-login-1">
-              <h2>Login</h2>
 
-              <div class="div-1-form-login-1">
-                <form onsubmit="loginSuccsec(event)">
-                  <div style="margin-left: 11px;">
-                    <input
-                      class="input-login"
-                      placeholder="Enter Your Emaid id "
-                      required
-                      id="emailIdLogin"
-                    />
-                    <i class="fa-regular fa-user icon-login"></i>
-                </div>
-                <div style="margin-left: 11px;">
-                    <input class="input-login" placeholder="Enter Your Password " required id="PasswordLogin" />
-                    <i class="fa-regular fa-eye-slash icon-login"></i>
-                </div>
-                <div class="div-login-forgot-pass">
-                    <span><input type="checkbox" /> Remeber </span>
-                    <span>Forgot password ?</span>
-                </div>
-                <div style="text-align: center; color: green; margin: 12px; display: none;" id="login_Msg">
-                    <p>Login successfully !</p>
-                </div>
+    <header class="head-1-profile" id="Profileid">
+        <div class="div-1-head-profile">
+            <i class="fa-solid fa-x close-form-icon" onclick="closeProfile()"></i
+          >
+        <div class="div-1-head-profile">
+            <h1 class="h1-profile">Profile</h1>
+        </div>
+        <div>
+         <div class="div-p-profile" style="display: flex;"> <span>Name:- </span><p id="profileName"> </p></div>
+         <div  class="div-p-profile" style="display: flex;"> <span>Name:-  </span><p id="profileEmail"></p>
 
-                <div class="div-form-button-login">
-                    <button>Login</button>
-                </div>
-                </form>
-            </div>
         </div>
-        </div>
-        </div>
-        </div>
-    </header>
-
-    <header id="Regiestrationform">
-        <div class="head-1-Regiestration" id="closeRegiestrationForm">
-            <div class="div-Regiestration-1-heade-1">
-                <div class="div-2-Regiestration-head-1">
-                    <a href="/">
-                        <i class="fa-solid fa-x close-form-registration-icon" onclick="closeForm()"></i
-            ></a>
-          </div>
-          <div>
-            <div class="div-second-Regiestration-1">
-              <h1>Welcome</h1>
-            </div>
-            <div class="div-third-Regiestration-1">
-              <h2>Registration</h2>
-
-              <div class="div-1-form-Regiestration-1">
-                <form
-                  class="registartion-form"
-                  onsubmit="registartionLocaclSave(event)"
-                >
-                  <div style="margin-bottom:5px;">
-                    <div>
-                      <div>
-                        <input
-                          class="input-Regiestration"
-                          placeholder="Enter Your FullName"
-                          type="text"
-                          required
-                          id="input_fillname-registartion"
-                        />
-                      </div>
-                      <div>
-                        <input
-                          class="input-Regiestration"
-                          placeholder="Enter Your Email id "
-                          type="email"
-                          required
-                          id="input_Emailid-registartion"
-                          onblur="checkEmail()"
-                          onfocus="checkemail_1()"
-                        />
-                      </div>
-                    </div>
-                    <div>
-                      <div>
-                        <input
-                          class="input-Regiestration"
-                          placeholder="Enter Your Password "
-                          type="password"
-                          required
-                          id="input_Password-registartion"
-                          onfocus="checkpassword()"
-                        />
-                      </div>
-                      <div>
-                        <input
-                          class="input-Regiestration"
-                          placeholder="Re-enter Your Password "
-                          type="password"
-                          required
-                          id="input_re-passwordcheck-registartion"
-                          onfocus="checkpassword()"
-                        />
-                      </div>
-                    </div>
-                    <div></div>
-                  </div>
-                  <p
-                    class="error_msg"
-                    id="error_msg"
-                  >
-                    The eamil is already Paresent !
-                  </p>
-                  <p
-                    class="error_msg_1"
-                    id="error_msg_1"
-                  >
-                    The both the Password is not match !
-                  </p>
-                  <div>
-               <button  class="btn-registration" id="btn_1_registration">
-                     Submit 
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
+        <div>
+         <Button class="btn-profile"><a href="./index.html">Logout</a></Button>
         </div>
       </div>
     </header>
+    
 
     <nav class="nav_1">
       <div class="nav-1-div-1" id="navbarscroll">
@@ -171,21 +50,10 @@
         </div>
         <div class="nav-1-div-3">
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="#About">About</a></li>
+            <li><a href="./login.html">Home</a></li>
+            <li><a href="#About-first">About</a></li>
             <li><a href="">Contact</a></li>
-            <li
-              style="
-                display: flex;
-                justify-content: center;
-                align-items: center;
-              "
-            >
-              <a href="#Regiestrationform" onclick="registrationPageOpen()"
-                >Sign~up &nbsp;</a
-              ><span class="span-1-nav-1"> /</span
-              ><a href="#Loginform" onclick="loginPageOpen()">Login</a>
-            </li>
+           <li><a onclick="profileOpen()" href="#Profileid">Profile</a></li>
           </ul>
         </div>
       </div>
@@ -205,8 +73,7 @@
           </div>
           <div class="div-2-sec-2">
             <button>
-              <a onclick="loginPageOpen()" href="#Loginform"
-                ><a onclick="loginPageOpen()" href="#Loginform">Check-In</a></a
+              <a><a onclick="loginPageOpen()" href="./allMethodSecondindexpages/StringPage/String.html">Check-In</a></a
               >
             </button>
           </div>
@@ -226,7 +93,7 @@
           </div>
           <div class="div-2-sec-2">
             <button>
-              <a onclick="loginPageOpen()" href="#Loginform">Check-In</a>
+              <a href="./allMethodSecondindexpages/ArrayPage/Array.html">Check-In</a>
             </button>
           </div>
           <div class="div-3-sec-2">
@@ -350,8 +217,7 @@
     </section>
 
     <!-- About section -->
-    <section class="sec-5" id="About"></section>
-    <section class="sec-5" id="About">
+    <section class="sec-5" id="About-first">
       <div class="div-1-sec-5">
         <div class="div-1-first-sec-5">
           <img src="./Image_index/11060987.jpg" alt="" />
@@ -381,7 +247,7 @@
           </ul>
         </div>
       </div>
-    </section>
+
       <div class="div-1-sec-5">
         <div class="div-NEXT-second-sec-5">
           <h1>What is Js ?</h1>
@@ -464,11 +330,11 @@
           </div>
           <div class="div-icon-foot-1">
             <i class="fa-brands fa-linkedin-in"></i>
-                        <i class="fa-brands fa-google-drive"></i>
-                        <i class="fa-brands fa-js"></i>
-                        <i class="fa-solid fa-folder"></i>
-                </div>
-            </div>
+            <i class="fa-brands fa-google-drive"></i>
+            <i class="fa-brands fa-js"></i>
+            <i class="fa-solid fa-folder"></i>
+        </div>
+        </div>
         </div>
         <div style="
           text-align: center;
@@ -481,6 +347,26 @@
         </footer>
 
         <script>
+            let n = []
+            let m = localStorage.getItem("emailIDLogin")
+            let arr = localStorage.getItem("registrationData")
+            if (arr != null) {
+                let n = JSON.parse(arr)
+                let ProfileDeatils = n.filter((ob, index) => ob.Email == m)
+                console.log(ProfileDeatils)
+                document.getElementById("profileName").innerText = ProfileDeatils[0].Name
+                document.getElementById("profileEmail").innerText = ProfileDeatils[0].Email
+            }
+
+
+
+            let profileOpen = () => {
+                document.getElementById("Profileid").style.display = "block"
+
+            }
+            let closeProfile = () => {
+                document.getElementById("Profileid").style.display = "none"
+            }
         </script>
 </body>
 

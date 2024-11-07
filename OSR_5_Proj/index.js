@@ -1,6 +1,7 @@
 // local storage Contact email address
 
 let contactEmailIds = []
+
 function contacatEmailId(event) {
   event.preventDefault()
 
@@ -40,6 +41,7 @@ function slideChange_First() {
     "1px solid black"
   document.getElementById("last-div-slider-button-first").style.border = "none"
 }
+
 function slideChange_Second() {
   document.getElementById("div_id_sec-2").style.display = "none"
   document.getElementById("div_id_sec-3").style.display = "block"
@@ -77,6 +79,7 @@ function registrationPageOpen() {
 // registration save in local
 let localStorageaddRegistration =
   JSON.parse(localStorage.getItem("registrationData")) || []
+
 function registartionLocaclSave(event) {
   event.preventDefault()
   // alert("hello")
@@ -175,6 +178,7 @@ function loginSuccsec(event) {
   }
 }
 window.history.forward()
+
 function noBack() {
   window.history.forward()
 }

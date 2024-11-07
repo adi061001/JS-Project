@@ -196,7 +196,7 @@
 
 .div-11-second-sec-2 {
     border: 1px solid;
-    width: 122px;
+    width: 128px;
     font-family: system-ui;
     padding: 7px;
     background: #645b8ff7;
@@ -360,9 +360,9 @@
 }
 
 
-/* string pop up css */
+/* array pop up css */
 
-.head-1-string-len {
+.head-1-array-len {
     position: absolute;
     top: 70px;
     z-index: 1111111;
@@ -370,43 +370,43 @@
     background: #000102cc;
 }
 
-.div-1-1-head-1-string-len {
+.div-1-1-head-1-array-len {
     width: 34pc;
     height: 32pc;
     color: white;
     padding: 12px;
 }
 
-.div-1-1-head-1-string-len h3 {
+.div-1-1-head-1-array-len h3 {
     display: inline;
     text-align: center;
     width: 100%;
 }
 
-.div-2-1-head-string h4 {
+.div-2-1-head-array h4 {
     margin-top: 30px;
 }
 
-.div-2-1-head-string {
+.div-2-1-head-array {
     margin-top: 20px;
 }
 
-.p-string-head-1 {
+.p-array-head-1 {
     position: absolute;
     left: 116px;
 }
 
-.div-1-2-head-1-string {
+.div-1-2-head-1-array {
     width: 100%;
     height: 53px;
 }
 
-.ul-1-head-1-string {
+.ul-1-head-1-array {
     position: absolute;
     left: 51px;
 }
 
-.div-form-head-string {
+.div-form-head-array {
     height: 266px;
     display: flex;
     align-items: center;
@@ -415,7 +415,7 @@
     font-style: italic;
 }
 
-.div-form-head-string input {
+.div-form-head-array input {
     height: 29px;
     text-align: center;
     font-style: italic;
@@ -424,7 +424,7 @@
     color: white;
 }
 
-.div-form-head-string button {
+.div-form-head-array button {
     height: 29px;
     /* background: transparent; */
     /* color: white; */
@@ -436,11 +436,11 @@
     cursor: pointer;
 }
 
-.div-form-head-string h2 {
+.div-form-head-array h2 {
     margin: 12px;
 }
 
-.output-boc-div-string-head-1 {
+.output-boc-div-array-head-1 {
     border: 1px solid;
     width: 433px;
     height: 161px;
@@ -450,7 +450,7 @@
     overflow: auto;
 }
 
-.output-last-div-string {
+.output-last-div-array {
     margin: 12px;
 }
 
@@ -463,7 +463,7 @@
     cursor: pointer;
 }
 
-#header-string-method {
+#header-array-method {
     display: none;
 }
 
@@ -512,7 +512,7 @@
     display: none;
 }
 
-.div-1-1-head-1-string-concat {
+.div-1-1-head-1-array-concat {
     width: 34pc;
     height: 41pc;
     color: white;
@@ -624,7 +624,7 @@
     margin: 12px;
 }
 
-.div-1-1-head-1-string-uppercase {
+.div-1-1-head-1-array-uppercase {
     width: 34pc;
     height: 31pc;
     color: white;
@@ -675,7 +675,7 @@
     margin: 12px;
 }
 
-.div-1-1-head-1-string-replace {
+.div-1-1-head-1-array-replace {
     width: 34pc;
     height: 37pc;
     color: white;
@@ -780,7 +780,7 @@
     font-family: "cursive";
 }
 
-.string-method {
+.array-method {
     position: absolute;
     top: 56%;
     z-index: 111;
@@ -792,4 +792,83 @@
     letter-spacing: 19px;
     font-style: italic;
     color: #a31a23;
+}
+
+
+/* length */
+
+#header-array-len {
+    display: none;
+}
+
+
+/* Pop */
+
+#header-array-pop {
+    display: none;
+}
+
+
+/* Push */
+
+#header-array-push {
+    display: none;
+}
+
+.form-array-slice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-array-slice input {
+    margin: 10px 0px 10px 0px;
+}
+
+.div-form-head-slice {
+    height: 330px;
+    display: flex;
+    align-items: center;
+    margin-top: 31px;
+    flex-direction: column;
+    font-style: italic;
+}
+
+.div-form-head-slice input {
+    height: 29px;
+    text-align: center;
+    font-style: italic;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+}
+
+.div-form-head-slice button {
+    height: 29px;
+    /* background: transparent; */
+    /* color: white; */
+    width: 84px;
+    border: 1px solid white;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.div-form-head-slice h2 {
+    margin: 12px;
+}
+
+.div-1-1-head-1-array-Slice {
+    width: 34pc;
+    height: 39pc;
+    color: white;
+    padding: 12px;
+}
+
+.div-1-1-head-1-array-Slice h3 {
+    display: inline;
+    text-align: center;
+    width: 100%;
 }

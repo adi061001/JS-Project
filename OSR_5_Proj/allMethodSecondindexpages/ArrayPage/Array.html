@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet" />
+
+    <!-- Fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <!-- css File -->
+    <link rel="stylesheet" href="./Array.css">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <!-- For length Method  -->
+
+    <header class="head-1-array-len" id="header-array-len">
+        <div>
+            <i class="fa-solid fa-xmark icon-close-method" onclick="closemethodlen()"></i>
+            <div class="div-1-1-head-1-array-len">
+                <div style="text-align: center;">
+                    <h3>Title :</h3> <span>Length</span></div>
+                <div class="div-2-1-head-array">
+                    <h4>Description :-</h4>
+                    <div class="div-1-2-head-1-array">
+                        <p class="p-array-head-1">The length is used to find length of array elements </p>
+                    </div>
+                    <div style="height: 36px;">
+                        <ul class="ul-1-head-1-array">
+                            <li>In array index start with zero but length is start with one</li>
+
+
+                        </ul>
+                    </div>
+                    <div class="div-form-head-array">
+                        <h2>Testing</h2>
+                        <form onsubmit="checkength(event)">
+                            <input type="text" placeholder="enter your input " id="arraylength">
+                            <button>Get length</button>
+                        </form>
+
+                        <div class="output-boc-div-array-head-1" style="color: black;">
+                            <h5 style="color: black;">OutPut :-</h5>
+
+                            <div class="output-last-div-array">
+                                <div style="overflow: auto;">
+                                    <p style="display: inline;">Input :-- </p>
+                                    <p id="inputUser" style="overflow:auto ; display: inline;"><br></p>
+
+                                </div>
+
+                                <div style="background-color: #ffe2a3; padding: 9px;">
+                                    <p style="margin-top: 15px" id="spacelength"></p>
+                                    <p>the length of input is :-- <span id="lengthoutput"> </span></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+
+    <!-- pop -->
+    <header class="head-1-array-len" id="header-array-pop">
+        <div>
+            <i class="fa-solid fa-xmark icon-close-method" onclick="closemethodpop()"></i>
+            <div class="div-1-1-head-1-array-len">
+                <div style="text-align: center;">
+                    <h3>Title :</h3> <span>Pop()</span></div>
+                <div class="div-2-1-head-array">
+                    <h4>Description :-</h4>
+                    <div class="div-1-2-head-1-array">
+                        <p class="p-array-head-1">the pop() method is used to remove elemnts from array </p>
+                    </div>
+                    <div style="height: 36px;">
+                        <ul class="ul-1-head-1-array">
+                            <li>pop method remove elemnts from end of arrya</li>
+                            <li>It will change orignal array </li>
+
+
+                        </ul>
+                    </div>
+                    <div class="div-form-head-array">
+                        <h2>Testing</h2>
+                        <form onsubmit="checkPop(event)">
+                            <input type="text" placeholder="enter your input " id="arrayPop">
+                            <button>Get Output</button>
+                        </form>
+
+                        <div class="output-boc-div-array-head-1" style="color: black;">
+                            <h5 style="color: black;">OutPut :-</h5>
+
+                            <div class="output-last-div-array">
+                                <div style="overflow: auto;">
+                                    <p style="display: inline;">Input :-- </p>
+                                    <p id="inputUser" style="overflow:auto ; display: inline;"><br></p>
+
+                                </div>
+
+                                <div style="background-color: #ffe2a3; padding: 9px;">
+                                    <p style="margin-top: 15px" id=""></p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+
+
+
+    <!-- Push -->
+    <header class="head-1-array-len" id="header-array-push">
+        <div>
+            <i class="fa-solid fa-xmark icon-close-method" onclick="closemethodPush()"></i>
+            <div class="div-1-1-head-1-array-len">
+                <div style="text-align: center;">
+                    <h3>Title :</h3> <span>Push()</span></div>
+                <div class="div-2-1-head-array">
+                    <h4>Description :-</h4>
+                    <div class="div-1-2-head-1-array">
+                        <p class="p-array-head-1">the push() method is used to add elemnts in array </p>
+                    </div>
+                    <div style="height: 36px;">
+                        <ul class="ul-1-head-1-array">
+                            <li>push method add elemnts in end of array</li>
+                            <li>It will change orignal array </li>
+
+
+                        </ul>
+                    </div>
+                    <div class="div-form-head-array">
+                        <h2>Testing</h2>
+                        <form onsubmit="checkPush(event)">
+                            <input type="text" placeholder="enter your input " id="arrayPush">
+                            <input type="text" placeholder="what you have to add " id="arrayPush_add">
+                            <button>Get Output</button>
+                        </form>
+
+                        <div class="output-boc-div-array-head-1" style="color: black;">
+                            <h5 style="color: black;">OutPut :-</h5>
+
+                            <div class="output-last-div-array">
+                                <div style="overflow: auto;">
+                                    <p style="display: inline;">Input :-- </p>
+                                    <p id="inputUser" style="overflow:auto ; display: inline;"><br></p>
+
+                                </div>
+
+                                <div style="background-color: #ffe2a3; padding: 9px;">
+                                    <p style="margin-top: 15px" id="pushOutput"></p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- Slice -->
+    <header class="head-1-array-len" id="header-array-Slice">
+        <div>
+            <i class="fa-solid fa-xmark icon-close-method" onclick="closemethodSlice()"></i>
+            <div class="div-1-1-head-1-array-Slice">
+                <div style="text-align: center;">
+                    <h3>Title :</h3> <span>slice()</span></div>
+                <div class="div-2-1-head-array">
+                    <h4>Description :-</h4>
+                    <div class="div-1-2-head-1-array">
+                        <p class="p-array-head-1">The Slice method extraxt the part from array with the help of index value </p>
+                    </div>
+                    <div style="height: 36px;">
+                        <ul class="ul-1-head-1-array">
+                            <li>It Take to permitters startindex and endindex </li>
+                            <li> the second permitters is alway take less one so put it +1 in index </li>
+                            <li>it will not change orginal array return new array </li>
+
+
+                        </ul>
+                    </div>
+                    <div class="div-form-head-slice">
+                        <h2>Testing</h2>
+                        <form onsubmit="checkPush(event)" class="form-array-slice">
+                            <input type="text" placeholder="enter your input " id="arrayPush">
+                            <input type="text" placeholder="what you have to add " id="arrayPush_add">
+                            <button>Get Output</button>
+                        </form>
+
+                        <div class="output-boc-div-array-head-1" style="color: black;">
+                            <h5 style="color: black;">OutPut :-</h5>
+
+                            <div class="output-last-div-array">
+                                <div style="overflow: auto;">
+                                    <p style="display: inline;">Input :-- </p>
+                                    <p id="inputUser" style="overflow:auto ; display: inline;"><br></p>
+
+                                </div>
+
+                                <div style="background-color: #ffe2a3; padding: 9px;">
+                                    <p style="margin-top: 15px" id="pushOutput"></p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+
+
+
+    <nav class="nav_1">
+        <div class="nav-1-div-1" id="navbarscroll">
+            <div class="nav-1-div-2">
+                <div class="div-log-1">
+                    <h1>J/</h1>
+                    <span>{script}</span>
+                </div>
+            </div>
+            <div class="nav-1-div-3">
+                <ul>
+                    <li><a href="./login.html">Home</a></li>
+                    <li>
+                        <a href="../../login.html">JScript</a>
+                    </li>
+
+                    <li><a href="../../index.html">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <section class="sec-5" id="About" style="margin: 15px 0px 15px 0px;
+    padding: 10px 0px 15px 0px;">
+        <div class="div-1-sec-5">
+            <div class="div-1-first-sec-5">
+                <img src="../../Image_index/js-initial-monogram-with-letter-creative-logo_1190297-24732.avif" alt="" />
+                <h2 class="array-method">Array</h2>
+            </div>
+            <div class="div-1-second-sec-5">
+                <h1>What is Array ?</h1>
+                <p>
+                    An array in JavaScript is a type of global object that is used to store data. Arrays consist of an ordered collection or list containing zero or more data types, and use numbered indices starting from 0 to access specific items.
+
+
+                </p>
+                <ul>
+                    <li>Instead of creating five separate variables, we now have one variable that contains all five elements. We used square brackets — [] — to create an array.
+
+                    </li>
+                    <li>An item in a JavaScript array is accessed by referring to the index number of the item in square brackets. </li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="sec-2" id="div_id_sec-2" onclick="open">
+        <div class="div-1-sec-2">
+
+            <div class="div-1-1-sec-1">
+                <div class="div-111-sec-1">
+                    <h4>Length</h4>
+                </div>
+                <div class="div-2-sec-2">
+                    <button onclick="openLengtharray()">
+                
+                  <a >Check-In</a></a
+                >
+              </button>
+                </div>
+                <div class="div-3-sec-2">
+                    <p>
+                        the Length is used to find length of character if you put a single space it will count it as character
+
+                    </p>
+                    <ul style="list-style: none; margin: 31px 0px 0px 0px; ">
+                        <li>
+                            <h3>1- length</h3>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="div-1-1-sec-1">
+                <div class="div-11-third-sec-1">
+                    <h4>Pop()</h4>
+                </div>
+                <div class="div-2-sec-2">
+                    <button onclick="openConcatarray()">
+                <a >Check-In</a>
+              </button>
+                </div>
+                <div class="div-3-sec-2">
+                    <p>
+                        The method is used to concat or add two array into another variable
+                    </p>
+                    <ul style="list-style: none; margin: 31px 0px 0px 0px; ">
+                        <li>
+                            <h3>1- concat(varName )</h3>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+            <div class="div-1-1-sec-1">
+                <div class="div-111-sec-2">
+                    <h4>Push()</h4>
+                </div>
+                <div class="div-2-sec-2">
+                    <button onclick="opensplitarray()">
+                <a >Check-In</a>
+              </button >
+                </div>
+                <div class="div-3-sec-2">
+                    <p>
+                        The split method is used to split all the words and return a new array into single character
+                    </p>
+                    <ul style="list-style: none; margin: 31px 0px 0px 0px; ">
+                        <li>
+                            <h3>1- split("")</h3>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <div class="div-1-1-sec-1">
+                <div class="div-111-sec-2">
+                    <h4>Slice()</h4>
+                </div>
+                <div class="div-2-sec-2">
+                    <button onclick="opensplitarray()">
+                <a >Check-In</a>
+              </button>
+                </div>
+                <div class="div-3-sec-2">
+                    <p>
+                        When we have to extart particular words from array we have slice method retrun new String
+
+                    </p>
+                    <ul style="list-style: none; margin: 19px 0px 0px 0px; ">
+                        <li>
+                            <h3>1-slice(startInd,endInd)</h3>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="div-1-1-sec-1">
+                <div class="div-11-third-sec-2">
+                    <h4>Splice()
+                    </h4>
+                </div>
+                <div class="div-2-sec-2">
+                    <button onclick="opencharCodeAtarray()">
+                <a >Check-In</a>
+              </button>
+                </div>
+                <div class="div-3-sec-2">
+                    <p>
+                        The method returns a UTF-16 code just you have to give index value and it code value
+                    </p>
+                    <ul style="list-style: none; margin: 31px 0px 0px 0px; ">
+                        <li>
+                            <h3>1-charCodeAt(indexvalue)</h3>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="div-1-1-sec-1">
+                <div class="div-11-second-sec-2">
+                    <h4>CopyWIthiin ()
+                    </h4>
+                </div>
+                <div class="div-2-sec-2">
+                    <button onclick="opencharAtarray()">
+                <a >Check-In</a>
+              </button>
+                </div>
+                <div class="div-3-sec-2">
+                    <p>
+                        When we have have to find at index number which charact is persent you can check with chartat method
+                    </p>
+                    <ul style="list-style: none; margin: 15px 0px 0px 0px; ">
+                        <li>
+                            <h3>1- charat(indexvalue)</h3>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <div class="div-1-1-sec-1">
+                <div class="div-11-third-sec-2">
+                    <h4>Flat()</h4>
+                </div>
+                <div class="div-2-sec-2">
+                    <button onclick="openincludes()">
+                <a >Check-In</a>
+              </button>
+                </div>
+                <div class="div-3-sec-2">
+                    <p>
+                        The method is used to check the particuler word is persent or not return boolen value
+                    </p>
+                    <ul style="list-style: none; margin: 31px 0px 0px 0px; ">
+                        <li>
+                            <h3>1-includes(word,indvalue)</h3>
+                        </li>
+
+
+
+
+                        </u>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="sec-3" id="div_id_sec-3">
+        <div class="div-1-next-sec-2">
+            <div class="div-1-1-sec-1">
+                <div class="div-11-third-sec-2">
+                    <h4>at()</h4>
+                </div>
+                <div class="div-2-sec-2">
+                    <button onclick="openrepeat()">
+                <a >Check-In</a>
+              </button>
+                </div>
+                <div class="div-3-sec-2">
+                    <p>
+                        when ever we need to Repeat the words of array we use Repeat method wich take number how much time you have to Repeat
+                    </p>
+                    <ul style="list-style: none; margin: 19px 0px 0px 0px; ">
+                        <li>
+                            <h3>1- repeat(number how much time)</h3>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div class="div-1-1-sec-1">
+                <div class="div-11-third-sec-2">
+                    <h4>shift/unshift</h4>
+                </div>
+                <div class="div-2-sec-2">
+                    <button onclick="openmatch()">
+                <a >Check-In</a>
+              </button>
+                </div>
+                <div class="div-3-sec-2">
+                    <p>
+                        the match method use to search in array and retrun new array which work case sensistive
+                    </p>
+                    <ul style="list-style: none; margin: 31px 0px 0px 0px; ">
+                        <li>
+                            <h3>1- shift()</h3>
+                        </li>
+                        <li>
+                            <h3>2- unshift()</h3>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="div-1-1-sec-1">
+                <div class="div-11-third-sec-2">
+                    <h4>Index</h4>
+                </div>
+                <div class="div-2-sec-2">
+                    <button>
+                <a >Check-In</a>
+              </button>
+                </div>
+                <div class="div-3-sec-2">
+                    <p>
+                        Whenever we need to find index value of character we use two methods are :--
+
+
+                    </p>
+                    <ul style="list-style: none; margin: 31px 0px 0px 0px; ">
+                        <li>
+                            <h3>1- indexOf()</h3>
+                        </li>
+                        <li>
+                            <h3>2- lastindexOf()</h3>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="div-1-1-sec-1">
+                <div class="div-1second-sec-1">
+                    <h4>Upper/Down</h4>
+                </div>
+                <div class="div-2-sec-2">
+                    <button onclick="upperdownlettercasematch()">
+                <a >Check-In</a>
+              </button>
+                </div>
+                <div class="div-3-sec-2">
+                    <p>
+                        Whenever we need to have to change lowecase words to Uppercase or to lowecase </p>
+                    <ul style="list-style: none; margin: 31px 0px 0px 0px; ">
+                        <li>
+                            <h3>1- toUpperCase()</h3>
+                        </li>
+                        <li>
+                            <h3>2- toLowerCase()</h3>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="div-1-1-sec-1">
+                <div class="div-1-fouth-sec-1">
+                    <h4>Trim</h4>
+                </div>
+                <div class="div-2-sec-2">
+                    <button>
+                <a >Check-In</a>
+              </button>
+                </div>
+                <div class="div-3-sec-2">
+                    <p>
+                        I is used to remove all the space from start and the end and it will remove single space between words only
+                    </p>
+                    <ul style="list-style: none; margin: 17px 0px 0px 0px; ">
+                        <li>
+                            <h3>1- trim()</h3>
+                        </li>
+                        <li>
+                            <h3>2- trimStart()</h3>
+                        </li>
+                        <li>
+                            <h3>3- trimEnd()</h3>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <div class="div-1-1-sec-1">
+                <div class="div-11-third-sec-2">
+                    <h4>Replace()</h4>
+                </div>
+                <div class="div-2-sec-2">
+                    <button onclick="replaceOpen()">
+                <a >Check-In</a>
+              </button>
+                </div>
+                <div class="div-3-sec-2">
+                    <p>
+                        when we need to change single word from array we use replce method
+                    </p>
+                    <ul style="list-style: none; margin: 31px 0px 0px 0px; ">
+                        <li>
+                            <h3>1- replace(persent word,replce word)</h3>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <div class="div-1-1-sec-1">
+                <div class="div-11-third-sec-2">
+                    <h4>Replaceall()</h4>
+                </div>
+                <div class="div-2-sec-2">
+                    <button onclick="replaceAllOpen()">
+                <a >Check-In</a>
+              </button>
+                </div>
+                <div class="div-3-sec-2">
+                    <p>
+                        when we need to change single word from whole array we use replce method
+                    </p>
+                    <ul style="list-style: none; margin: 31px 0px 0px 0px; ">
+                        <li>
+                            <h3>1- replaceall(persent word,replce word)</h3>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slider button Section -->
+    <section class="sec-4-slider">
+        <div class="last-div-slider">
+            <button id="last-div-slider-button-first" class="last-div-slider-button-first" onclick="slideChange_First()"></button>
+            <button id="last-div-slider-button_second" class="last-div-slider-button_second" onclick="slideChange_Second()"></button>
+        </div>
+    </section>
+
+
+
+
+
+</body>
+<script src="./Array.js"></script>
+
+</html>
