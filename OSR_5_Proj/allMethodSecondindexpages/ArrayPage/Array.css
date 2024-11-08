@@ -872,3 +872,34 @@
     text-align: center;
     width: 100%;
 }
+
+#header-array-Slice {
+    display: none;
+}
+
+#header-array-Flat {
+    display: none;
+}
+
+#header-array-at {
+    display: none;
+}
+
+
+/* shift
+ */
+
+#header-array-Shift {
+    display: none;
+}
+
+
+/* unshfit */
+
+#header-array-UnShift {
+    display: none;
+}
+
+#header-array-sort {
+    display: none;
+}
