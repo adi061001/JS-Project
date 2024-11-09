@@ -97,7 +97,7 @@
 .sec-1-div-1::before {
   width: 100%;
   content: " ";
-  background-image: url(/Image_index/programming-background-with-html.jpg);
+  background-image: url(Image_index/programming-background-with-html.jpg);
   position: absolute;
 
   height: 100vh;
