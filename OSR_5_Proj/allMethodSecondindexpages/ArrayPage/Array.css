@@ -781,10 +781,10 @@
 }
 
 .array-method {
-    position: absolute;
-    top: 56%;
+    position: relative;
+    /* top: 56%; */
     z-index: 111;
-    left: 23%;
+    left: 50px;
     background: #f2f2f2;
     width: 310px;
     height: 41px;
@@ -792,6 +792,8 @@
     letter-spacing: 19px;
     font-style: italic;
     color: #a31a23;
+    bottom: 176px;
+
 }
 
 
@@ -827,7 +829,7 @@
 }
 
 .div-form-head-slice {
-    height: 330px;
+    height: 391px;
     display: flex;
     align-items: center;
     margin-top: 31px;
@@ -873,33 +875,7 @@
     width: 100%;
 }
 
-#header-array-Slice {
-    display: none;
-}
-
-#header-array-Flat {
-    display: none;
-}
-
-#header-array-at {
-    display: none;
-}
-
-
-/* shift
- */
-
-#header-array-Shift {
-    display: none;
-}
-
-
-/* unshfit */
-
-#header-array-UnShift {
-    display: none;
-}
-
-#header-array-sort {
+/* Slice */
+#header-array-slice{
     display: none;
 }
