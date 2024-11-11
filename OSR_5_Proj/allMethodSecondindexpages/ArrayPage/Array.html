@@ -192,7 +192,7 @@
 
 
     <!-- Slice -->
-    <header class="head-1-array-len" id="header-array-slice">
+    <header class="head-1-array-len" id="header-array-Slice">
         <div>
             <i class="fa-solid fa-xmark icon-close-method" onclick="closemethodSlice()"></i>
             <div class="div-1-1-head-1-array-Slice">
@@ -214,11 +214,9 @@
                     </div>
                     <div class="div-form-head-slice">
                         <h2>Testing</h2>
-                        <form onsubmit="checkSlice(event)" class="form-array-slice">
-                            <input type="text" placeholder="enter your input " id="arraySlice">
-                            <input type="text" placeholder="enter first index  " id="arraySliceIndex_Start">
-                            <input type="text" placeholder="enter end index " id="arraySliceIndex_End">
-
+                        <form onsubmit="checkSlicr(event)" class="form-array-slice">
+                            <input type="text" placeholder="enter your input " id="arrayPush">
+                            <input type="text" placeholder="what you have to add " id="arrayPush_add">
                             <button>Get Output</button>
                         </form>
 
@@ -233,7 +231,7 @@
                                 </div>
 
                                 <div style="background-color: #ffe2a3; padding: 9px;">
-                                    <p style="margin-top: 15px" id="SliceOutput"></p>
+                                    <p style="margin-top: 15px" id="pushOutput"></p>
 
                                 </div>
 
@@ -250,34 +248,30 @@
 
 
 
-    <!-- Splice -->
-    <header class="head-1-array-len" id="header-array-splice">
+    <!-- Flat -->
+    <header class="head-1-array-len" id="header-array-Flat">
         <div>
-            <i class="fa-solid fa-xmark icon-close-method" onclick="closemethodSplice()"></i>
+            <i class="fa-solid fa-xmark icon-close-method" onclick="closemethodDFlat()"></i>
             <div class="div-1-1-head-1-array-Slice">
                 <div style="text-align: center;">
-                    <h3>Title :</h3> <span>splice()</span></div>
+                    <h3>Title :</h3> <span>flat()</span></div>
                 <div class="div-2-1-head-array">
                     <h4>Description :-</h4>
                     <div class="div-1-2-head-1-array">
-                        <p class="p-array-head-1">The Splice method while remove element from array and add on new elements to it .</p>
+                        <p class="p-array-head-1"> When We have Nested array that time we use flat method to remove that Nested Array </p>
                     </div>
                     <div style="height: 36px;">
                         <ul class="ul-1-head-1-array">
-                            <li>It Take three permitters startindex and endindex,addelement </li>
-                            <li> the second permitters is alway take less one so put it +1 in index </li>
-                            <li>it will  change orginal </li>
+                            <li>for example [1,2,3,4,[5,6,7,8],9,10] </li>
+                            <li>It is will change orignal array </li>
 
 
                         </ul>
                     </div>
                     <div class="div-form-head-slice">
                         <h2>Testing</h2>
-                        <form onsubmit="checkSplice(event)" class="form-array-slice">
-                            <input type="text" placeholder="enter your input " id="arraySplice">
-                            <input type="text" placeholder="enter first index  " id="arraySpliceIndex_Start">
-                            <input type="text" placeholder="enter end index " id="arraySpliceIndex_End">
-                            <input type="text" placeholder="enter end index " id="arraySpliceIndex_Add">
+                        <form onsubmit="checkFlat(event)" class="form-array-Flat">
+                            <input type="text" placeholder="enter your input " id="arrayFlat">
 
                             <button>Get Output</button>
                         </form>
@@ -293,7 +287,7 @@
                                 </div>
 
                                 <div style="background-color: #ffe2a3; padding: 9px;">
-                                    <p style="margin-top: 15px" id="SliceOutput"></p>
+                                    <p style="margin-top: 15px" id="FlatOutput"></p>
 
                                 </div>
 
@@ -307,6 +301,246 @@
         </div>
 
     </header>
+
+
+
+
+    <!-- at -->
+    <header class="head-1-array-len" id="header-array-at">
+        <div>
+            <i class="fa-solid fa-xmark icon-close-method" onclick="closeMethodDAt()"></i>
+            <div class="div-1-1-head-1-array-Slice">
+                <div style="text-align: center;">
+                    <h3>Title :</h3> <span>At()</span></div>
+                <div class="div-2-1-head-array">
+                    <h4>Description :-</h4>
+                    <div class="div-1-2-head-1-array">
+                        <p class="p-array-head-1"> Whewe have to know at any index which element is persent that time we use at() method </p>
+                    </div>
+                    <div style="height: 36px;">
+                        <ul class="ul-1-head-1-array">
+
+                            <li>It is will not change orignal array </li>
+
+
+                        </ul>
+                    </div>
+                    <div class="div-form-head-slice">
+                        <h2>Testing</h2>
+                        <form onsubmit="checkAt(event)" class="form-array-Flat">
+                            <input type="text" placeholder="enter your input " id="arrayAt_1">
+                            <input type="text" placeholder="enter your index " id="arrayAt">
+
+                            <button>Get Output</button>
+                        </form>
+
+                        <div class="output-boc-div-array-head-1" style="color: black;">
+                            <h5 style="color: black;">OutPut :-</h5>
+
+                            <div class="output-last-div-array">
+                                <div style="overflow: auto;">
+                                    <p style="display: inline;">Input :-- </p>
+                                    <p id="inputUser" style="overflow:auto ; display: inline;"><br></p>
+
+                                </div>
+
+                                <div style="background-color: #ffe2a3; padding: 9px;">
+                                    <p style="margin-top: 15px" id="atOutput"></p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- Shift  -->
+    <header class="head-1-array-len" id="header-array-Shift">
+        <div>
+            <i class="fa-solid fa-xmark icon-close-method" onclick="closeMethodShift()"></i>
+            <div class="div-1-1-head-1-array-Slice">
+                <div style="text-align: center;">
+                    <h3>Title :</h3> <span>shift()</span></div>
+                <div class="div-2-1-head-array">
+                    <h4>Description :-</h4>
+                    <div class="div-1-2-head-1-array">
+                        <p class="p-array-head-1"> the shift method is used to remove first element of array </p>
+
+                    </div>
+                    <div style="height: 36px;">
+                        <ul class="ul-1-head-1-array">
+
+                            <li>It is will change orignal array </li>
+
+
+                        </ul>
+                    </div>
+                    <div class="div-form-head-slice">
+                        <h2>Testing</h2>
+                        <form onsubmit="checkShift(event)" class="form-array-Flat">
+                            <input type="text" placeholder="enter your input " id="arrayShift_1">
+
+
+                            <button>Get Output</button>
+                        </form>
+
+                        <div class="output-boc-div-array-head-1" style="color: black;">
+                            <h5 style="color: black;">OutPut :-</h5>
+
+                            <div class="output-last-div-array">
+                                <div style="overflow: auto;">
+                                    <p style="display: inline;">Input :-- </p>
+                                    <p id="inputUser" style="overflow:auto ; display: inline;"><br></p>
+
+                                </div>
+
+                                <div style="background-color: #ffe2a3; padding: 9px;">
+                                    <p style="margin-top: 15px" id="shiftOutput"></p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <button onclick="openUnShift()"> unshift</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </header>
+
+
+
+    <!-- unSort-->
+    <header class="head-1-array-len" id="header-array-sort">
+        <div>
+            <i class="fa-solid fa-xmark icon-close-method" onclick="closeMethodSort()"></i>
+            <div class="div-1-1-head-1-array-Slice">
+                <div style="text-align: center;">
+                    <h3>Title :</h3> <span>Sort()</span></div>
+                <div class="div-2-1-head-array">
+                    <h4>Description :-</h4>
+                    <div class="div-1-2-head-1-array">
+                        <p class="p-array-head-1"> The Sort method will change array in assending order</p>
+
+                    </div>
+                    <div style="height: 36px;">
+                        <ul class="ul-1-head-1-array">
+
+                            <li>It set array according to alphabet, if you want to set array accorrding to numbers it will take a callback function which take two permitters a & b</li>
+
+
+
+                        </ul>
+                    </div>
+                    <div class="div-form-head-slice">
+                        <h2>Testing</h2>
+                        <form onsubmit="checkSort(event)" class="form-array-Flat">
+                            <input type="text" placeholder="enter your input " id="arraySort">
+                            <!-- <input type="text" placeholder="add element " id="arrayUnShift_2"> -->
+                            <button>Get Output</button>
+
+                        </form>
+                        <div class="output-boc-div-array-head-1" style="color: black;">
+                            <h5 style="color: black;">OutPut :-</h5>
+                            <div class="output-last-div-array">
+                                <div style="overflow: auto;">
+                                    <p style="display: inline;">Input :-- </p>
+                                    <p id="inputUser" style="overflow:auto ; display: inline;"><br></p>
+                                </div>
+                                <div style="background-color: #ffe2a3; padding: 9px;">
+                                    <p style="margin-top: 15px" id="sortOutput"></p>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </header>
+
+
+
+
+
+    <!-- conacat -->
+    <header class="head-1-array-len" id="header-array-Concat">
+        <div>
+            <i class="fa-solid fa-xmark icon-close-method" onclick="closeMethodSort()"></i>
+            <div class="div-1-1-head-1-array-Slice">
+                <div style="text-align: center;">
+                    <h3>Title :</h3> <span>concat()</span></div>
+                <div class="div-2-1-head-array">
+                    <h4>Description :-</h4>
+                    <div class="div-1-2-head-1-array">
+                        <p class="p-array-head-1"> The Sort method will change array in assending order</p>
+
+                    </div>
+                    <div style="height: 36px;">
+                        <ul class="ul-1-head-1-array">
+
+                            <li>It set array according to alphabet, if you want to set array accorrding to numbers it will take a callback function which take two permitters a & b</li>
+
+
+
+                        </ul>
+                    </div>
+                    <div class="div-form-head-slice">
+                        <h2>Testing</h2>
+                        <form onsubmit="checkSort(event)" class="form-array-Flat">
+                            <input type="text" placeholder="enter your input " id="arraySort">
+                            <!-- <input type="text" placeholder="add element " id="arrayUnShift_2"> -->
+                            <button>Get Output</button>
+
+                        </form>
+                        <div class="output-boc-div-array-head-1" style="color: black;">
+                            <h5 style="color: black;">OutPut :-</h5>
+                            <div class="output-last-div-array">
+                                <div style="overflow: auto;">
+                                    <p style="display: inline;">Input :-- </p>
+                                    <p id="inputUser" style="overflow:auto ; display: inline;"><br></p>
+                                </div>
+                                <div style="background-color: #ffe2a3; padding: 9px;">
+                                    <p style="margin-top: 15px" id="sortOutput"></p>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </header>
+
+
+
+
 
 
 

@@ -26,6 +26,7 @@ function slideChange_Second() {
   document.getElementById("last-div-slider-button-first").style.border =
     "1px solid black"
 }
+
 // length
 function checkength(event) {
   event.preventDefault()
@@ -43,6 +44,10 @@ function checkength(event) {
 function closemethodlen() {
   document.getElementById("header-array-len").style.display = "none"
 }
+let openLength = () => {
+  document.getElementById("header-array-len").style.display = "block"
+}
+
 // POP
 function checkPop(event) {
   event.preventDefault()
@@ -58,6 +63,10 @@ function checkPop(event) {
 
 function closemethodpop() {
   document.getElementById("header-array-pop").style.display = "none"
+}
+
+let openPop = () => {
+  document.getElementById("header-array-pop").style.display = "block"
 }
 
 // Push
@@ -77,34 +86,87 @@ let checkPush = (event) => {
 function closemethodPush() {
   document.getElementById("header-array-push").style.display = "none"
 }
-
-// Slice
-function checkSlice(event){
+// Flat
+function checkFlat(event) {
+  let m = []
   event.preventDefault()
+  let inputArr = document.getElementById("arrayFlat").value
 
-  let inputArr=document.getElementById("arraySlice").value
-  let inputStartIndx=document.getElementById("arraySliceIndex_Start").value
-  let inputLastIndx=document.getElementById("arraySliceIndex_End").value
-  let splitArr=inputArr.split(",")
-  let outputSLice=splitArr.slice(inputStartIndx,inputLastIndx)
-  
-  document.getElementById("SliceOutput").innerHTML=`The Org array:- [${splitArr}] <br>
-  The extrat part of array [${outputSLice}]`
+  let splitArr = JSON.parse("[" + inputArr + "]")
 
-
-}
-function closemethodSlice(){
-  document.getElementById("header-array-slice").style.display="none"
+  document.getElementById(
+    "FlatOutput"
+  ).innerHTML = `User to input :- [${inputArr}] <br>
+  <br>
+  output of flat :- [${splitArr}]`
 }
 
-// Splice
-function  checkSplice(event){
+// At()
+let checkAt = (event) => {
   event.preventDefault()
-  let inputArr=document.getElementById("arraySplice").value
-  let startIndxArr=document.getElementById("arraySpliceIndex_Start").value
-  let endIndxAr=document.getElementById("arraySpliceIndex_End").value
-  let inputAddArr=document.getElementById("arraySpliceIndex_Add").value
-  let splitArr=inputArr.split(",")
-  splitArr.splice(startIndxArr,endIndxAr,inputAddArr)
-  
+  let inputArr = document.getElementById("arrayAt_1").value
+  let inputIndxValue = document.getElementById("arrayAt").value
+  let splitArr = inputArr.split(",")
+  document.getElementById(
+    "atOutput"
+  ).innerText = `the Org array :-[${inputArr}] 
+  on index ${inputIndxValue} the element is persent is [${splitArr.at(
+    inputIndxValue
+  )}]`
+}
+// shift
+let checkShift = (event) => {
+  event.preventDefault()
+  let inputArr = document.getElementById("arrayUnShift_1").value
+  let splitArr = inputArr.split(",")
+  splitArr.shift()
+  document.getElementById(
+    "shiftOutput"
+  ).innerHTML = `the Org array :- [${inputArr}]
+    shift renove first element :-[${splitArr}]`
+}
+
+let checkUnShift = (event) => {
+  event.preventDefault()
+  let inputArr = document.getElementById("arrayUnShift_1").value
+  let inputAddArr = document.getElementById("arrayUnShift_2").value
+  let splitArr = inputArr.split(",")
+  splitArr.unshift(inputAddArr)
+  console.log(splitArr)
+  document.getElementById(
+    "unshiftOutput"
+  ).innerHTML = `the Org arr :-[${inputArr}]
+   the unshift add new element :-[${splitArr} ]`
+}
+let openUnShift = () => {
+  document.getElementById("header-array-UnShift").style.display = "block"
+  document.getElementById("header-array-Shift").style.display = "none"
+}
+let openShift = () => {
+  document.getElementById("header-array-Shift").style.display = "block"
+  document.getElementById("header-array-UnShift").style.display = "none"
+}
+
+// Sort
+let checkSort = (event) => {
+  event.preventDefault()
+  let inputArr = document.getElementById("arraySort").value
+  let splitArr = inputArr.split(",")
+  let emtyArrFirst = []
+  let emtyArrSecond = []
+  for (let i of splitArr) {
+    let checkNaN = parseInt(i)
+    if (isNaN(checkNaN) == true) {
+      emtyArrFirst.push(i)
+      emtyArrFirst.sort()
+    } else {
+      emtyArrSecond.push(i * 1)
+      emtyArrSecond.sort((a, b) => a - b)
+    }
+  }
+  let resultOutput = [...emtyArrFirst, ...emtyArrSecond]
+  document.getElementById(
+    "sortOutput"
+  ).innerHTML = `the Org arr:- [${inputArr}] <br> 
+The sort Output :- [${resultOutput}]    `
 }
