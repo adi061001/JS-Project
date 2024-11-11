@@ -54,7 +54,7 @@ function checkPop(event) {
   let inputArr = document.getElementById("arrayPop").value
   let splitInput = inputArr.split(",")
   splitInput.pop()
-  console.log(inputArr)
+
   document.getElementById(
     "popoutput"
   ).innerHTML = `Orignal String :-[${inputArr}] <br>
@@ -132,7 +132,7 @@ let checkUnShift = (event) => {
   let inputAddArr = document.getElementById("arrayUnShift_2").value
   let splitArr = inputArr.split(",")
   splitArr.unshift(inputAddArr)
-  console.log(splitArr)
+
   document.getElementById(
     "unshiftOutput"
   ).innerHTML = `the Org arr :-[${inputArr}]

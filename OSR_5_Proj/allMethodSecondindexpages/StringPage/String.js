@@ -127,7 +127,6 @@ function checkSlice(event) {
       "index starting 0 So minuse value are not allow"
     document.getElementById("SlicetextOutput").style.color = "red"
   } else {
-    console.log(ouptputSlice)
     document.getElementById(
       "SlicetextOutput"
     ).innerText = `the extart part is :- ${ouptputSlice}`
@@ -233,9 +232,6 @@ function checkmatch(event) {
   let stringtext = document.getElementById("stringtext_match").innerText
   let macthtext = document.getElementById("matchindexvalue").value
 
-  console.log(typeof stringtext)
-  console.log(typeof macthtext)
-
   // var re = new RegExp(macthtext, "g")
   let outputmatach = stringtext.match(macthtext)
 
@@ -246,8 +242,6 @@ function checkmatch(event) {
   document.getElementById(
     "matchOtput_2"
   ).innerText = ` [{0:${outputmatach[0]} ,index:${outputmatach.index} ,input:${outputmatach.input}}]`
-
-  console.log(outputmatach)
 }
 
 function closemethodmatch() {
@@ -306,7 +300,6 @@ function checkReplace(event) {
   let newTextInput = document.getElementById("Replacevaluetext-2").value
 
   let replaceouput = stringTextInput.replace(replaceTextInput, newTextInput)
-  console.log(replaceouput)
 
   document.getElementById(
     "replaceOuput"
@@ -332,7 +325,6 @@ function checkReplaceall(event) {
   let newTextInput = document.getElementById("Replaceallvaluetext-2").value
 
   let replaceouput = stringTextInput.replaceAll(replaceTextInput, newTextInput)
-  console.log(replaceouput)
 
   document.getElementById(
     "replaceallOuput"
