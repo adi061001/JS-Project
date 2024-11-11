@@ -11,7 +11,6 @@ function contacatEmailId(event) {
   localStorage.setItem("email", contactEmailIds)
   document.getElementById("inputCoantactMail").value = " "
   let m = localStorage.getItem("email")
-  console.log([m])
 }
 
 // nav bar color changer
@@ -123,13 +122,11 @@ registrationDataUser = JSON.parse(localDataUser)
 function checkEmail() {
   let checkEmail = document.getElementById("input_Emailid-registartion").value
   let status = undefined
-  console.log(localDataUser)
-  console.log(localDataUser != null)
+
   if (localDataUser != null) {
     status = registrationDataUser.some(
       (emailcheck) => emailcheck.Email == checkEmail
     )
-    console.log(status)
   }
 
   if (status) {
@@ -160,9 +157,8 @@ function loginSuccsec(event) {
   if (localget != null) {
     local = JSON.parse(localget)
     let mailidcheck = local.some((email) => email.Email == loginEmail)
-    console.log(mailidcheck)
+
     let passwordcheck = local.some((email) => email.passwrd == loginpassword)
-    console.log(passwordcheck)
 
     if (mailidcheck && passwordcheck) {
       document.getElementById("login_Msg").style.display = "block"

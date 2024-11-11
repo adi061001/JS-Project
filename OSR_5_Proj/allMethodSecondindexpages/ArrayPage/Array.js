@@ -54,7 +54,7 @@ function checkPop(event) {
   let inputArr = document.getElementById("arrayPop").value
   let splitInput = inputArr.split(",")
   splitInput.pop()
-  console.log(inputArr)
+
   document.getElementById(
     "popoutput"
   ).innerHTML = `Orignal String :-[${inputArr}] <br>
@@ -148,11 +148,19 @@ let checkUnShift = (event) => {
   let inputAddArr = document.getElementById("arrayUnShift_2").value
   let splitArr = inputArr.split(",")
   splitArr.unshift(inputAddArr)
-  console.log(splitArr)
+
   document.getElementById(
     "unshiftOutput"
   ).innerHTML = `the Org arr :-[${inputArr}]
    the unshift add new element :-[${splitArr} ]`
+}
+let openUnShift = () => {
+  document.getElementById("header-array-UnShift").style.display = "block"
+  document.getElementById("header-array-Shift").style.display = "none"
+}
+let openShift = () => {
+  document.getElementById("header-array-Shift").style.display = "block"
+  document.getElementById("header-array-UnShift").style.display = "none"
 }
 
 // Sort
@@ -267,68 +275,4 @@ Additon of all number :-${reduceOutput}`
 }
 let closeReduce = () => {
   document.getElementById("header-array-Reduce").style.display = "none"
-}
-
-let openSlice = () => {
-  document.getElementById("header-array-Slice").style.display = "block"
-}
-let closemethodSlice = () => {
-  document.getElementById("header-array-Slice").style.display = "none"
-}
-// flat
-let closemethodDFlat = () => {
-  document.getElementById("header-array-Flat").style.display = "none"
-}
-// Att
-let closeMethodDAt = () => {
-  document.getElementById("header-array-at").style.display = "none"
-}
-// shift unshift
-
-closeMethodShift = () => {
-  document.getElementById("header-array-Shift").style.display = "none"
-}
-
-// openUnShift = () => {
-//   document.getElementById("header-array-Shift").style.display = "none"
-// }
-
-let openUnShift = () => {
-  document.getElementById("header-array-UnShift").style.display = "block"
-  document.getElementById("header-array-Shift").style.display = "none"
-}
-let openShift = () => {
-  document.getElementById("header-array-UnShift").style.display = "none"
-  document.getElementById("header-array-Shift").style.display = "block"
-}
-let closeMethodUnShift = () => {
-  document.getElementById("header-array-UnShift").style.display = "none"
-}
-
-// sort
-let closeMethodSort = () => {
-  document.getElementById("header-array-sort").style.display = "none"
-}
-// concat
-let closeMethodConcat = () => {
-  document.getElementById("header-array-Concat").style.display = "none"
-}
-// Entries
-
-let closeMethodEnteies = () => {
-  document.getElementById("header-array-Entries").style.display = "none"
-}
-
-let entriesOpen = () => {
-  document.getElementById("header-array-Entries").style.display = "block"
-}
-// filter
-let filterOpen = () => {
-  document.getElementById("header-array-filter").style.display = "block"
-}
-
-// reduce
-
-let openReduce = () => {
-  document.getElementById("header-array-Reduce").style.display = "block"
 }
