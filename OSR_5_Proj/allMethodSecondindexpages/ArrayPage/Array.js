@@ -26,6 +26,8 @@ function slideChange_Second() {
   document.getElementById("last-div-slider-button-first").style.border =
     "1px solid black"
 }
+
+
 // length
 function checkength(event) {
   event.preventDefault()
@@ -43,6 +45,15 @@ function checkength(event) {
 function closemethodlen() {
   document.getElementById("header-array-len").style.display = "none"
 }
+let openLength=()=>{
+  document.getElementById("header-array-len").style.display="block"
+}
+
+
+
+
+
+
 // POP
 function checkPop(event) {
   event.preventDefault()
@@ -59,6 +70,13 @@ function checkPop(event) {
 function closemethodpop() {
   document.getElementById("header-array-pop").style.display = "none"
 }
+
+
+let openPop=()=>{
+  document.getElementById("header-array-pop").style.display="block"
+}
+
+
 
 // Push
 let checkPush = (event) => {
@@ -77,6 +95,14 @@ let checkPush = (event) => {
 function closemethodPush() {
   document.getElementById("header-array-push").style.display = "none"
 }
+
+let openPush=()=>{
+  document.getElementById("header-array-push").style.display="block"
+}
+
+
+
+
 // Flat
 function checkFlat(event) {
   let m = []
@@ -92,6 +118,13 @@ function checkFlat(event) {
   output of flat :- [${splitArr}]`
 }
 
+
+let openFlat=()=>{
+  document.getElementById("header-array-Flat").style.display="block "
+}
+
+
+
 // At()
 let checkAt = (event) => {
   event.preventDefault()
@@ -105,6 +138,14 @@ let checkAt = (event) => {
     inputIndxValue
   )}]`
 }
+let openAt=()=>{
+  document.getElementById("header-array-at").style.display="block"
+}
+
+
+
+
+
 // shift
 let checkShift = (event) => {
   event.preventDefault()
@@ -116,6 +157,13 @@ let checkShift = (event) => {
   ).innerHTML = `the Org array :- [${inputArr}]
     shift renove first element :-[${splitArr}]`
 }
+let openShiftbtn =()=>{
+  document.getElementById("header-array-Shift").style.display="block"
+
+}
+
+
+
 
 let checkUnShift = (event) => {
   event.preventDefault()
@@ -137,6 +185,12 @@ let openShift = () => {
   document.getElementById("header-array-Shift").style.display = "block"
   document.getElementById("header-array-UnShift").style.display = "none"
 }
+
+
+
+
+
+
 
 // Sort
 let checkSort = (event) => {
@@ -160,4 +214,111 @@ let checkSort = (event) => {
     "sortOutput"
   ).innerHTML = `the Org arr:- [${inputArr}] <br> 
 The sort Output :- [${resultOutput}]    `
+
+
 }
+
+
+
+let openShort=()=>{
+
+document.getElementById("header-array-sort").style.display="block"
+
+
+}
+
+
+
+// concat
+let checkConcat =(event) =>{
+  event.preventDefault()
+  let inputArr =document.getElementById("arrayConcat").value
+  let inputSecondArr =document.getElementById("arrayConcat_2").value
+  let splitArr=inputArr.split(",")
+  let splitArr_2=inputSecondArr.split(",")
+let outputArr=splitArr.concat(splitArr_2)
+document.getElementById("concatOutput").innerHTML=`
+the first Arr :- [${inputArr}] <br>
+the second Arr [${inputSecondArr}] <br>
+the concat array :-[${outputArr}]  `
+}
+
+let openConcat=()=>{
+  document.getElementById("header-array-Concat").style.display="block"
+}
+
+
+
+
+// Entries
+let checkEntries=(event)=>{
+  event.preventDefault()
+  let inputArr=document.getElementById("arrayEntries").value
+  let splitArr=inputArr.split(",")
+  let outputEntries =splitArr.entries()
+
+
+  let text= ""
+  for(let i of outputEntries)
+  {
+ text+=`[${i}]<br>`
+  }
+document.getElementById("outputEntries").innerHTML=` the Org Arr :-[${inputArr}] <br> the output :-<br> ${text} `
+  
+    
+
+}
+//  Map
+let  checkMap=(event)=>{
+  event.preventDefault()
+  let inputArr=document.getElementById("arrayMap").value
+  let valueArr =parseInt(document.getElementById("arrayMap_1").value)
+
+  let splitArr = inputArr.split(",")
+
+  let mapOuptArr=splitArr.map(v=>v*1+valueArr*1)
+
+  document.getElementById("outputMAp").innerHTML=`the Org Arr :- [${splitArr}]<br>
+  the map output :- [${mapOuptArr}]`
+  
+}
+
+
+let closeMap=()=>{
+  document.getElementById("header-array-map").style.display="none"
+}
+let mapOpen=()=>{
+  document.getElementById("header-array-map").style.display="block"
+}
+
+// filter
+let checkFilter=(event)=>{
+  event.preventDefault()
+  let inputArr=document.getElementById("arrayFilter").value
+  let splitArr=inputArr.split(",")
+  let filterArr=splitArr.filter(value=>(value*1)%2==0)
+  document.getElementById("outputFilter").innerHTML=`the Org Arr :-[${inputArr}] <br>
+  the even number :-[${filterArr}]`
+  
+
+
+}
+let closefilter=()=>{
+  document.getElementById("header-array-filter").style.display="none"
+}
+let checkReduce=(event)=>{
+event.preventDefault()  
+let inputArr=document.getElementById("arrayReduce").value
+let splitArr=inputArr.split(",")
+let reduceOutput=splitArr.reduce((total,value)=>{
+  return ((total*1)+(value*1))
+  
+  
+})
+document.getElementById("outputreduce").innerHTML=`the org Arr :-[${inputArr}] <br>
+Additon of all number :-${reduceOutput}`
+}
+let closeReduce=()=>{
+  document.getElementById("header-array-Reduce").style.display="none"
+}
+
