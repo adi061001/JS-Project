@@ -429,6 +429,65 @@
 
 
 
+    <!-- UnShift  -->
+    <header class="head-1-array-len" id="header-array-UnShift">
+        <div>
+            <i class="fa-solid fa-xmark icon-close-method" onclick="closeMethodUnShift()"></i>
+            <div class="div-1-1-head-1-array-Slice">
+                <div style="text-align: center;">
+                    <h3>Title :</h3> <span>Unshift()</span></div>
+                <div class="div-2-1-head-array">
+                    <h4>Description :-</h4>
+                    <div class="div-1-2-head-1-array">
+                        <p class="p-array-head-1"> the shift method is used to add first element of array </p>
+
+                    </div>
+                    <div style="height: 36px;">
+                        <ul class="ul-1-head-1-array">
+
+                            <li>It is will change orignal array </li>
+
+
+                        </ul>
+                    </div>
+                    <div class="div-form-head-slice">
+                        <h2>Testing</h2>
+                        <form onsubmit="checkUnShift" class="form-array-Flat">
+                            <input type="text" placeholder="enter your input " id="arrayUnShift_1">
+                            <input type="text" placeholder="enter your input " id="arrayUnShift_2">
+
+
+                            <button>Get Output</button>
+                        </form>
+
+                        <div class="output-boc-div-array-head-1" style="color: black;">
+                            <h5 style="color: black;">OutPut :-</h5>
+
+                            <div class="output-last-div-array">
+                                <div style="overflow: auto;">
+                                    <p style="display: inline;">Input :-- </p>
+                                    <p id="inputUser" style="overflow:auto ; display: inline;"><br></p>
+
+                                </div>
+
+                                <div style="background-color: #ffe2a3; padding: 9px;">
+                                    <p style="margin-top: 15px" id="unshiftOutput"></p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <button onclick="openShift()"> shift</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </header>
 
 
 
@@ -511,14 +570,14 @@
     <!-- conacat -->
     <header class="head-1-array-len" id="header-array-Concat">
         <div>
-            <i class="fa-solid fa-xmark icon-close-method" onclick="closeMethodSort()"></i>
+            <i class="fa-solid fa-xmark icon-close-method" onclick="closeMethodConcat()"></i>
             <div class="div-1-1-head-1-array-Slice">
                 <div style="text-align: center;">
                     <h3>Title :</h3> <span>Concat()</span></div>
                 <div class="div-2-1-head-array">
                     <h4>Description :-</h4>
                     <div class="div-1-2-head-1-array">
-                        <p class="p-array-head-1"> The Concat  method will conacat or add arrays</p>
+                        <p class="p-array-head-1"> The Concat method will conacat or add arrays</p>
 
                     </div>
                     <div style="height: 36px;">
@@ -567,7 +626,7 @@
 
 
 
-<!-- Entries -->
+    <!-- Entries -->
     <header class="head-1-array-len" id="header-array-Entries">
         <div>
             <i class="fa-solid fa-xmark icon-close-method" onclick="closeMethodEnteies()"></i>
@@ -593,7 +652,7 @@
                         <h2>Testing</h2>
                         <form onsubmit="checkEntries(event)" class="form-array-Flat">
                             <input type="text" placeholder="enter your input of array " id="arrayEntries">
-                            
+
                             <button>Get Output</button>
 
 
@@ -626,202 +685,202 @@
 
 
 
-    
-
-
-<!-- Map -->
-<header class="head-1-array-len" id="header-array-map">
-    <div>
-        <i class="fa-solid fa-xmark icon-close-method" onclick="closeMap()"></i>
-        <div class="div-1-1-head-1-array-Slice">
-            <div style="text-align: center;">
-                <h3>Title :</h3> <span>Map()</span></div>
-            <div class="div-2-1-head-array">
-                <h4>Description :-</h4>
-                <div class="div-1-2-head-1-array">
-                    <p class="p-array-head-1">the map is method of array which is also hof which modify array </p>
-
-                </div>
-                <div style="height: 36px;">
-                    <ul class="ul-1-head-1-array">
-                        <li>the map method return new array .</li>
-                        <li>In callback it take three permitters value ,index and array .</li>
-                        <li>Iterator each element of array and modify each of element</li>
 
 
 
-                    </ul>
-                </div>
-                <div class="div-form-head-Map">
+    <!-- Map -->
+    <header class="head-1-array-len" id="header-array-map">
+        <div>
+            <i class="fa-solid fa-xmark icon-close-method" onclick="closeMap()"></i>
+            <div class="div-1-1-head-1-array-Slice">
+                <div style="text-align: center;">
+                    <h3>Title :</h3> <span>Map()</span></div>
+                <div class="div-2-1-head-array">
+                    <h4>Description :-</h4>
+                    <div class="div-1-2-head-1-array">
+                        <p class="p-array-head-1">the map is method of array which is also hof which modify array </p>
 
-                    <h2>Testing</h2>
+                    </div>
+                    <div style="height: 36px;">
+                        <ul class="ul-1-head-1-array">
+                            <li>the map method return new array .</li>
+                            <li>In callback it take three permitters value ,index and array .</li>
+                            <li>Iterator each element of array and modify each of element</li>
 
-                    <form onsubmit="checkMap(event)" class="form-array-Flat" style="    display: flex;
+
+
+                        </ul>
+                    </div>
+                    <div class="div-form-head-Map">
+
+                        <h2>Testing</h2>
+
+                        <form onsubmit="checkMap(event)" class="form-array-Flat" style="    display: flex;
                     flex-direction: column;
                     align-items: center;
                 ">
-                        <input type="text" placeholder="enter your input of array " id="arrayMap"><br>
-                        <input type="text" placeholder="enter your single value to add all the number " id="arrayMap_1"><br>
-                        <button> Get Output </button>
+                            <input type="text" placeholder="enter your input of array " id="arrayMap"><br>
+                            <input type="text" placeholder="enter your single value to add all the number " id="arrayMap_1"><br>
+                            <button> Get Output </button>
 
 
-                    </form>
-                    <div class="output-boc-div-array-head-1" style="color: black;">
-                        <h5 style="color: black;">OutPut :-</h5>
-                        <div class="output-last-div-array">
-                            <div style="overflow: auto;">
-                                <p style="display: inline;"> Input:-- </p>
-                                <p id="inputUser" style="overflow:auto ; display: inline;"><br></p>
+                        </form>
+                        <div class="output-boc-div-array-head-1" style="color: black;">
+                            <h5 style="color: black;">OutPut :-</h5>
+                            <div class="output-last-div-array">
+                                <div style="overflow: auto;">
+                                    <p style="display: inline;"> Input:-- </p>
+                                    <p id="inputUser" style="overflow:auto ; display: inline;"><br></p>
+                                </div>
+                                <div style="background-color: #ffe2a3; padding: 9px;">
+                                    <p style="margin-top: 15px" id="outputMAp"></p>
+                                </div>
+
                             </div>
-                            <div style="background-color: #ffe2a3; padding: 9px;">
-                                <p style="margin-top: 15px" id="outputMAp"></p>
-                            </div>
-
                         </div>
+
                     </div>
 
                 </div>
 
             </div>
 
+
         </div>
 
-
-    </div>
-
-</header>
+    </header>
 
 
 
 
 
-<!-- Filter -->
-<header class="head-1-array-len" id="header-array-filter">
-    <div>
-        <i class="fa-solid fa-xmark icon-close-method" onclick="closefilter()"></i>
-        <div class="div-1-1-head-1-array-Slice">
-            <div style="text-align: center;">
-                <h3>Title :</h3> <span>Map()</span></div>
-            <div class="div-2-1-head-array">
-                <h4>Description :-</h4>
-                <div class="div-1-2-head-1-array">
-                    <p class="p-array-head-1">the filter method is check the condition if condition is satisfy then it will only provide thatm element  </p>
+    <!-- Filter -->
+    <header class="head-1-array-len" id="header-array-filter">
+        <div>
+            <i class="fa-solid fa-xmark icon-close-method" onclick="closefilter()"></i>
+            <div class="div-1-1-head-1-array-Slice">
+                <div style="text-align: center;">
+                    <h3>Title :</h3> <span>filter()</span></div>
+                <div class="div-2-1-head-array">
+                    <h4>Description :-</h4>
+                    <div class="div-1-2-head-1-array">
+                        <p class="p-array-head-1">the filter method is check the condition if condition is satisfy then it will only provide thatm element </p>
 
-                </div>
-                <div style="height: 36px;">
-                    <ul class="ul-1-head-1-array">
-                        <li>the filter method return new array .</li>
-                        <li>It take prdigatein  callback it take three permitters value ,index and array .</li>
-                        <li>Iterator each element of array and filter each of element</li>
+                    </div>
+                    <div style="height: 36px;">
+                        <ul class="ul-1-head-1-array">
+                            <li>the filter method return new array .</li>
+                            <li>It take prdigatein callback it take three permitters value ,index and array .</li>
+                            <li>Iterator each element of array and filter each of element</li>
 
 
 
-                    </ul>
-                </div>
-                <div class="div-form-head-Map">
+                        </ul>
+                    </div>
+                    <div class="div-form-head-Map">
 
-                    <h2>Testing</h2>
+                        <h2>Testing</h2>
 
-                    <form onsubmit="checkFilter(event)" class="form-array-Flat" style="    display: flex;
+                        <form onsubmit="checkFilter(event)" class="form-array-Flat" style="    display: flex;
                     flex-direction: column;
                     align-items: center;
                 ">
-                        <input type="text" placeholder="enter your input of array " id="arrayFilter"><br>
-                        
-                        <button> Get Output </button>
+                            <input type="text" placeholder="enter your input of array " id="arrayFilter"><br>
+
+                            <button> Get Output </button>
 
 
-                    </form>
-                    <div class="output-boc-div-array-head-1" style="color: black;">
-                        <h5 style="color: black;">OutPut :-</h5>
-                        <div class="output-last-div-array">
-                            <div style="overflow: auto;">
-                                <p style="display: inline;"> Input:-- </p>
-                                <p id="inputUser" style="overflow:auto ; display: inline;"><br></p>
+                        </form>
+                        <div class="output-boc-div-array-head-1" style="color: black;">
+                            <h5 style="color: black;">OutPut :-</h5>
+                            <div class="output-last-div-array">
+                                <div style="overflow: auto;">
+                                    <p style="display: inline;"> Input:-- </p>
+                                    <p id="inputUser" style="overflow:auto ; display: inline;"><br></p>
+                                </div>
+                                <div style="background-color: #ffe2a3; padding: 9px;">
+                                    <p style="margin-top: 15px" id="outputFilter"></p>
+                                </div>
+
                             </div>
-                            <div style="background-color: #ffe2a3; padding: 9px;">
-                                <p style="margin-top: 15px" id="outputFilter"></p>
-                            </div>
-
                         </div>
+
                     </div>
 
                 </div>
 
             </div>
 
+
         </div>
 
-
-    </div>
-
-</header>
+    </header>
 
 
 
 
-<!-- reduce -->
-<header class="head-1-array-len" id="header-array-Reduce">
-    <div>
-        <i class="fa-solid fa-xmark icon-close-method" onclick="closeReduce()"></i>
-        <div class="div-1-1-head-1-array-Slice">
-            <div style="text-align: center;">
-                <h3>Title :</h3> <span>Reduce()</span></div>
-            <div class="div-2-1-head-array">
-                <h4>Description :-</h4>
-                <div class="div-1-2-head-1-array">
-                    <p class="p-array-head-1">the Reduce method is give single value to us</p>
+    <!-- reduce -->
+    <header class="head-1-array-len" id="header-array-Reduce">
+        <div>
+            <i class="fa-solid fa-xmark icon-close-method" onclick="closeReduce()"></i>
+            <div class="div-1-1-head-1-array-Slice">
+                <div style="text-align: center;">
+                    <h3>Title :</h3> <span>Reduce()</span></div>
+                <div class="div-2-1-head-array">
+                    <h4>Description :-</h4>
+                    <div class="div-1-2-head-1-array">
+                        <p class="p-array-head-1">the Reduce method is give single value to us</p>
 
-                </div>
-                <div style="height: 36px;">
-                    <ul class="ul-1-head-1-array">
-                        <li>The reduce() method executes a reducer function for array element.</li>
-                        <li>The reduce() method returns a single value: the function's accumulated result.</li>
-                        <li>The reduce() method does not change the original array</li>
-                        
-
+                    </div>
+                    <div style="height: 36px;">
+                        <ul class="ul-1-head-1-array">
+                            <li>The reduce() method executes a reducer function for array element.</li>
+                            <li>The reduce() method returns a single value: the function's accumulated result.</li>
+                            <li>The reduce() method does not change the original array</li>
 
 
-                    </ul>
-                </div>
-                <div class="div-form-head-Map">
 
-                    <h2>Testing</h2>
 
-                    <form onsubmit="checkReduce(event)" class="form-array-Flat" style="    display: flex;
+                        </ul>
+                    </div>
+                    <div class="div-form-head-Map">
+
+                        <h2>Testing</h2>
+
+                        <form onsubmit="checkReduce(event)" class="form-array-Flat" style="    display: flex;
                     flex-direction: column;
                     align-items: center;
                 ">
-                        <input type="text" placeholder="enter your input of array " id="arrayReduce"><br>
-                        
-                        <button> Get Output </button>
+                            <input type="text" placeholder="enter your input of array " id="arrayReduce"><br>
+
+                            <button> Get Output </button>
 
 
-                    </form>
-                    <div class="output-boc-div-array-head-1" style="color: black;">
-                        <h5 style="color: black;">OutPut :-</h5>
-                        <div class="output-last-div-array">
-                            <div style="overflow: auto;">
-                                <p style="display: inline;"> Input:-- </p>
-                                <p id="inputUser" style="overflow:auto ; display: inline;"><br></p>
+                        </form>
+                        <div class="output-boc-div-array-head-1" style="color: black;">
+                            <h5 style="color: black;">OutPut :-</h5>
+                            <div class="output-last-div-array">
+                                <div style="overflow: auto;">
+                                    <p style="display: inline;"> Input:-- </p>
+                                    <p id="inputUser" style="overflow:auto ; display: inline;"><br></p>
+                                </div>
+                                <div style="background-color: #ffe2a3; padding: 9px;">
+                                    <p style="margin-top: 15px" id="outputreduce"></p>
+                                </div>
+
                             </div>
-                            <div style="background-color: #ffe2a3; padding: 9px;">
-                                <p style="margin-top: 15px" id="outputreduce"></p>
-                            </div>
-
                         </div>
+
                     </div>
 
                 </div>
 
             </div>
 
+
         </div>
 
-
-    </div>
-
-</header>
+    </header>
 
 
 
@@ -900,12 +959,12 @@
                 </div>
                 <div class="div-3-sec-2">
                     <p>
-                        the Length is used to find length of character if you put a single space it will count it as character
+                        the Length is used to find length of array how much element is persent in array
 
                     </p>
                     <ul style="list-style: none; margin: 31px 0px 0px 0px; ">
                         <li>
-                            <h3>1- length</h3>
+                            <h3><br>1- length</h3>
                         </li>
 
 
@@ -925,11 +984,11 @@
                 </div>
                 <div class="div-3-sec-2">
                     <p>
-                        The method is used to concat or add two array into another variable
+                        the pop method will remove last index element of array
                     </p>
                     <ul style="list-style: none; margin: 31px 0px 0px 0px; ">
                         <li>
-                            <h3>1- concat(varName )</h3>
+                            <h3><br><br>1- pop()</h3>
                         </li>
 
 
@@ -951,11 +1010,11 @@
                 </div>
                 <div class="div-3-sec-2">
                     <p>
-                        The split method is used to split all the words and return a new array into single character
+                        The push method will add element from end of array
                     </p>
                     <ul style="list-style: none; margin: 31px 0px 0px 0px; ">
                         <li>
-                            <h3>1- split("")</h3>
+                            <h3><br><br>1- push(val)</h3>
                         </li>
 
 
@@ -973,12 +1032,12 @@
                 </div>
                 <div class="div-3-sec-2">
                     <p>
-                        When we have to extart particular words from array we have slice method retrun new String
+                        the Slice method will not change org array it will extrat value from array wthi the help of index value
 
                     </p>
                     <ul style="list-style: none; margin: 19px 0px 0px 0px; ">
                         <li>
-                            <h3>1-slice(startInd,endInd)</h3>
+                            <h3><br>1-slice(strInd,endInd)</h3>
                         </li>
 
 
@@ -999,11 +1058,11 @@
                 </div>
                 <div class="div-3-sec-2">
                     <p>
-                        The method returns a UTF-16 code just you have to give index value and it code value
+                        The Splice method will change orginal array and remove elements from array and add element where it will remove
                     </p>
                     <ul style="list-style: none; margin: 31px 0px 0px 0px; ">
                         <li>
-                            <h3>1-charCodeAt(indexvalue)</h3>
+                            <h3>1-splice(start,end,add)</h3>
                         </li>
 
 
@@ -1011,29 +1070,12 @@
                 </div>
             </div>
 
-            <div class="div-1-1-sec-1">
-                <div class="div-11-second-sec-2">
-                    <h4>CopyWIthiin ()
-                    </h4>
-                </div>
-                <div class="div-2-sec-2">
-                    <button onclick="openCopyWithin()">
-                <a >Check-In</a>
-              </button>
-                </div>
-                <div class="div-3-sec-2">
-                    <p>
-                        When we have have to find at index number which charact is persent you can check with chartat method
-                    </p>
-                    <ul style="list-style: none; margin: 15px 0px 0px 0px; ">
-                        <li>
-                            <h3>1- charat(indexvalue)</h3>
-                        </li>
 
 
-                    </ul>
-                </div>
-            </div>
+
+
+
+
             <div class="div-1-1-sec-1">
                 <div class="div-11-third-sec-2">
                     <h4>Flat()</h4>
@@ -1045,11 +1087,11 @@
                 </div>
                 <div class="div-3-sec-2">
                     <p>
-                        The method is used to check the particuler word is persent or not return boolen value
+                        the flat method is used to merge nessted array into single array
                     </p>
                     <ul style="list-style: none; margin: 31px 0px 0px 0px; ">
                         <li>
-                            <h3>1-includes(word,indvalue)</h3>
+                            <h3><br>1- flat()</h3>
                         </li>
 
 
@@ -1058,14 +1100,6 @@
                         </u>
                 </div>
             </div>
-
-        </div>
-    </section>
-
-
-
-    <section class="sec-3" id="div_id_sec-3">
-        <div class="div-1-next-sec-2">
             <div class="div-1-1-sec-1">
                 <div class="div-11-third-sec-2">
                     <h4>at()</h4>
@@ -1077,17 +1111,27 @@
                 </div>
                 <div class="div-3-sec-2">
                     <p>
-                        when ever we need to Repeat the words of array we use Repeat method wich take number how much time you have to Repeat
+                        the at() method will check by index value it provide value by taking index value
                     </p>
                     <ul style="list-style: none; margin: 19px 0px 0px 0px; ">
                         <li>
-                            <h3>1- repeat(number how much time)</h3>
+                            <h3><br><br>1- at(indx)</h3>
                         </li>
 
 
                     </ul>
                 </div>
             </div>
+
+
+
+        </div>
+    </section>
+
+
+
+    <section class="sec-3" id="div_id_sec-3">
+        <div class="div-1-next-sec-2">
 
 
 
@@ -1102,7 +1146,7 @@
                 </div>
                 <div class="div-3-sec-2">
                     <p>
-                        the match method use to search in array and retrun new array which work case sensistive
+                        The shift method will remove element from start and unshift will add from start of array
                     </p>
                     <ul style="list-style: none; margin: 31px 0px 0px 0px; ">
                         <li>
@@ -1118,32 +1162,7 @@
                 </div>
             </div>
 
-            <div class="div-1-1-sec-1">
-                <div class="div-11-third-sec-2">
-                    <h4>Index</h4>
-                </div>
-                <div class="div-2-sec-2">
-                    <button>
-                <a >Check-In</a>
-              </button>
-                </div>
-                <div class="div-3-sec-2">
-                    <p>
-                        Whenever we need to find index value of character we use two methods are :--
 
-
-                    </p>
-                    <ul style="list-style: none; margin: 31px 0px 0px 0px; ">
-                        <li>
-                            <h3>1- indexOf()</h3>
-                        </li>
-                        <li>
-                            <h3>2- lastindexOf()</h3>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
             <div class="div-1-1-sec-1">
                 <div class="div-1second-sec-1">
                     <h4>sort()</h4>
@@ -1155,16 +1174,13 @@
                 </div>
                 <div class="div-3-sec-2">
                     <p>
-                        Whenever we need to have to change lowecase words to Uppercase or to lowecase </p>
-                    <ul style="list-style: none; margin: 31px 0px 0px 0px; ">
-                        <li>
-                            <h3>1- toUpperCase()</h3>
-                        </li>
-                        <li>
-                            <h3>2- toLowerCase()</h3>
-                        </li>
+                        the sort method will return an new array which is in asseendig order form
+                        <ul style="list-style: none; margin: 31px 0px 0px 0px; ">
+                            <li>
+                                <h3><br>1-sort())</h3>
+                            </li>
 
-                    </ul>
+                        </ul>
                 </div>
             </div>
             <div class="div-1-1-sec-1">
@@ -1178,18 +1194,13 @@
                 </div>
                 <div class="div-3-sec-2">
                     <p>
-                        I is used to remove all the space from start and the end and it will remove single space between words only
+                        the concat method of array willconcat or add one ore more then array into single array or it is used to assign to an another array
                     </p>
                     <ul style="list-style: none; margin: 17px 0px 0px 0px; ">
                         <li>
-                            <h3>1- trim()</h3>
+                            <h3>1- conacat(arr)</h3>
                         </li>
-                        <li>
-                            <h3>2- trimStart()</h3>
-                        </li>
-                        <li>
-                            <h3>3- trimEnd()</h3>
-                        </li>
+
 
 
                     </ul>
@@ -1200,17 +1211,17 @@
                     <h4>Entries()</h4>
                 </div>
                 <div class="div-2-sec-2">
-                    <button onclick="replaceOpen()">
+                    <button onclick="entriesOpen()">
                 <a >Check-In</a>
               </button>
                 </div>
                 <div class="div-3-sec-2">
                     <p>
-                        when we need to change single word from array we use replce method
+                        the Entries method return and key value pair of object
                     </p>
                     <ul style="list-style: none; margin: 31px 0px 0px 0px; ">
                         <li>
-                            <h3>1- replace(persent word,replce word)</h3>
+                            <h3><br><br>1- entries()</h3>
                         </li>
 
 
@@ -1228,11 +1239,11 @@
                 </div>
                 <div class="div-3-sec-2">
                     <p>
-                        when we need to change single word from whole array we use replce method
+                        the Map mathod will modify all the element of array and return new array
                     </p>
                     <ul style="list-style: none; margin: 31px 0px 0px 0px; ">
                         <li>
-                            <h3>1- replaceall(persent word,replce word)</h3>
+                            <h3><br>1- map(val,ind,arr)</h3>
                         </li>
 
 
@@ -1244,17 +1255,41 @@
                     <h4>Filtter()</h4>
                 </div>
                 <div class="div-2-sec-2">
-                    <button onclick="mapOpen()">
+                    <button onclick="filterOpen()">
                 <a >Check-In</a>
               </button>
                 </div>
                 <div class="div-3-sec-2">
                     <p>
-                        when we need to change single word from whole array we use replce method
+                        the filer method check the condtion is satisfy or not if it satisfy that much element will get
                     </p>
                     <ul style="list-style: none; margin: 31px 0px 0px 0px; ">
                         <li>
-                            <h3>1- replaceall(persent word,replce word)</h3>
+                            <h3>1- filter(val,ind,arr)</h3>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <div class="div-1-1-sec-1">
+                <div class="div-11-third-sec-2">
+                    <h4>Reduce()</h4>
+                </div>
+                <div class="div-2-sec-2">
+                    <button onclick="openReduce()">
+                <a >Check-In</a>
+              </button>
+                </div>
+                <div class="div-3-sec-2">
+                    <p>
+                        the reduce method will return new array and get single value from reduce it is HOF
+
+
+                    </p>
+                    <ul style="list-style: none; margin: 31px 0px 0px 0px; ">
+                        <li>
+                            <h3>1- reduce()</h3>
                         </li>
 
 
