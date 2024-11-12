@@ -5,28 +5,15 @@ let checkAssign = (event) => {
 
   let secondkeyObj = document.getElementById("objAssignkey_second").value
 
-  let dataobj = (b) => {
-    return Object.fromEntries(b)
-  }
+  let firstObj = JSON.parse(firstkeyObj)
+  let secondObj = JSON.parse(secondkeyObj)
 
-  let jsonforArr = JSON.parse("[" + firstkeyObj + "]")
-
-  let firstObjdata = dataobj(jsonforArr)
-
-  let dataobjsec = (b) => {
-    return Object.fromEntries(b)
-  }
-
-  let jsonforArrSecond = JSON.parse("[" + secondkeyObj + "]")
-
-  let seconObjct = dataobjsec(jsonforArrSecond)
-
-  let Obj = Object.assign({}, firstObjdata, seconObjct)
+  let outputAssign = Object.assign(firstObj, secondObj)
+  console.log(outputAssign)
 
   let detailsObjAssig = ""
-  let detailsObjAssigSecond = ""
-  for (let [key, value] of Object.entries(Obj)) {
-    detailsObjAssigSecond
+
+  for (let [key, value] of Object.entries(outputAssign)) {
     detailsObjAssig += key + ":" + value + "," + "<br>"
   }
 
@@ -36,22 +23,74 @@ let checkAssign = (event) => {
 }
 
 let closemethodAssign = () => {
-  document.getElementById("header-array-len").style.display = "none"
+  document.getElementById("header-obj-Assign").style.display = "none"
 }
 let openAssign = () => {
-  document.getElementById("header-array-len").style.display = "block"
+  document.getElementById("header-obj-Assign").style.display = "block"
 }
 
-const targetObject = getElemtntId("targetObject").value
-const sourceObject = getElemtntId("sourceObject").value
-// const value2 = getElemtntId("value2")
-let objectOne = JSON.parse(targetObject)
-let objectTwo = JSON.parse(sourceObject)
-const resultDiv = getElemtntId("assignResultDiv")
-let result = Object.assign(objectOne, objectTwo)
-let str = JSON.stringify(result)
-console.log(result)
-resultDiv.textContent = "The New String is :- " + str
-resultDiv.style.fontSize = 30
-targetObject = " "
-sourceObject = " "
+// KEYY
+let checkKey = (event) => {
+  event.preventDefault()
+  let inputObj = document.getElementById("objKeyMethod").value
+  let jsonObj = JSON.parse(inputObj)
+  document.getElementById(
+    "OutputKey"
+  ).innerHTML = `the key of object is =[${Object.keys(jsonObj)}]`
+}
+
+let closemethodKey = () => {
+  document.getElementById("header-obj-key").style.display = "none"
+}
+
+let openKey = () => {
+  document.getElementById("header-obj-key").style.display = "block"
+}
+
+// value
+let checkValue = (event) => {
+  event.preventDefault()
+  let inputObj = document.getElementById("objValueMethod").value
+  let jsonObj = JSON.parse(inputObj)
+
+  document.getElementById(
+    "Outputvalue"
+  ).innerHTML = `the values of object is =[${Object.values(jsonObj)}]`
+}
+
+let closemethodVal = () => {
+  document.getElementById("header-obj-value").style.display = "none"
+}
+
+let openValue = () => {
+  document.getElementById("header-obj-value").style.display = "block"
+}
+
+// entries
+let checkEntrise = (event) => {
+  event.preventDefault()
+  let inputObj = document.getElementById("objEntriseMethod").value
+  let jsonObj = JSON.parse(inputObj)
+  let outputentries = Object.entries(jsonObj)
+  let data = ""
+  for (let i of outputentries) {
+    data += "[" + i + "]" + ","
+  }
+  document.getElementById(
+    "OutputEntries"
+  ).innerHTML = `the entries Output :-<br>[${data}]`
+}
+
+let closemethodentries = () => {
+  document.getElementById("header-obj-entries").style.display = "none"
+}
+let openEntries = () => {
+  document.getElementById("header-obj-entries").style.display = "block"
+}
+// create
+let closeCreateMethod = () => {
+  document.getElementById("header-obj-create").style.display = "none"
+}
+let openCreate = () => {
+  document.getElementById("header-obj-create").style.display = "block"
+}

@@ -44,7 +44,7 @@ function checkength(event) {
 function closemethodlen() {
   document.getElementById("header-array-len").style.display = "none"
 }
-let openLength = () => {
+let openLengtharray = () => {
   document.getElementById("header-array-len").style.display = "block"
 }
 
@@ -54,7 +54,7 @@ function checkPop(event) {
   let inputArr = document.getElementById("arrayPop").value
   let splitInput = inputArr.split(",")
   splitInput.pop()
-
+  console.log(inputArr)
   document.getElementById(
     "popoutput"
   ).innerHTML = `Orignal String :-[${inputArr}] <br>
@@ -86,6 +86,11 @@ let checkPush = (event) => {
 function closemethodPush() {
   document.getElementById("header-array-push").style.display = "none"
 }
+
+let openPush = () => {
+  document.getElementById("header-array-push").style.display = "block"
+}
+
 // Flat
 function checkFlat(event) {
   let m = []
@@ -101,6 +106,10 @@ function checkFlat(event) {
   output of flat :- [${splitArr}]`
 }
 
+let openFlat = () => {
+  document.getElementById("header-array-Flat").style.display = "block "
+}
+
 // At()
 let checkAt = (event) => {
   event.preventDefault()
@@ -114,6 +123,10 @@ let checkAt = (event) => {
     inputIndxValue
   )}]`
 }
+let openAt = () => {
+  document.getElementById("header-array-at").style.display = "block"
+}
+
 // shift
 let checkShift = (event) => {
   event.preventDefault()
@@ -125,6 +138,9 @@ let checkShift = (event) => {
   ).innerHTML = `the Org array :- [${inputArr}]
     shift renove first element :-[${splitArr}]`
 }
+let openShiftbtn = () => {
+  document.getElementById("header-array-Shift").style.display = "block"
+}
 
 let checkUnShift = (event) => {
   event.preventDefault()
@@ -132,19 +148,11 @@ let checkUnShift = (event) => {
   let inputAddArr = document.getElementById("arrayUnShift_2").value
   let splitArr = inputArr.split(",")
   splitArr.unshift(inputAddArr)
-
+  console.log(splitArr)
   document.getElementById(
     "unshiftOutput"
   ).innerHTML = `the Org arr :-[${inputArr}]
    the unshift add new element :-[${splitArr} ]`
-}
-let openUnShift = () => {
-  document.getElementById("header-array-UnShift").style.display = "block"
-  document.getElementById("header-array-Shift").style.display = "none"
-}
-let openShift = () => {
-  document.getElementById("header-array-Shift").style.display = "block"
-  document.getElementById("header-array-UnShift").style.display = "none"
 }
 
 // Sort
@@ -170,3 +178,154 @@ let checkSort = (event) => {
   ).innerHTML = `the Org arr:- [${inputArr}] <br> 
 The sort Output :- [${resultOutput}]    `
 }
+
+let openShort = () => {
+  document.getElementById("header-array-sort").style.display = "block"
+}
+
+// concat
+let checkConcat = (event) => {
+  event.preventDefault()
+  let inputArr = document.getElementById("arrayConcat").value
+  let inputSecondArr = document.getElementById("arrayConcat_2").value
+  let splitArr = inputArr.split(",")
+  let splitArr_2 = inputSecondArr.split(",")
+  let outputArr = splitArr.concat(splitArr_2)
+  document.getElementById("concatOutput").innerHTML = `
+the first Arr :- [${inputArr}] <br>
+the second Arr [${inputSecondArr}] <br>
+the concat array :-[${outputArr}]  `
+}
+
+let openConcat = () => {
+  document.getElementById("header-array-Concat").style.display = "block"
+}
+
+// Entries
+let checkEntries = (event) => {
+  event.preventDefault()
+  let inputArr = document.getElementById("arrayEntries").value
+  let splitArr = inputArr.split(",")
+  let outputEntries = splitArr.entries()
+
+  let text = ""
+  for (let i of outputEntries) {
+    text += `[${i}]<br>`
+  }
+  document.getElementById(
+    "outputEntries"
+  ).innerHTML = ` the Org Arr :-[${inputArr}] <br> the output :-<br> ${text} `
+}
+//  Map
+let checkMap = (event) => {
+  event.preventDefault()
+  let inputArr = document.getElementById("arrayMap").value
+  let valueArr = parseInt(document.getElementById("arrayMap_1").value)
+
+  let splitArr = inputArr.split(",")
+
+  let mapOuptArr = splitArr.map((v) => v * 1 + valueArr * 1)
+
+  document.getElementById(
+    "outputMAp"
+  ).innerHTML = `the Org Arr :- [${splitArr}]<br>
+  the map output :- [${mapOuptArr}]`
+}
+
+let closeMap = () => {
+  document.getElementById("header-array-map").style.display = "none"
+}
+let mapOpen = () => {
+  document.getElementById("header-array-map").style.display = "block"
+}
+
+// filter
+let checkFilter = (event) => {
+  event.preventDefault()
+  let inputArr = document.getElementById("arrayFilter").value
+  let splitArr = inputArr.split(",")
+  let filterArr = splitArr.filter((value) => (value * 1) % 2 == 0)
+  document.getElementById(
+    "outputFilter"
+  ).innerHTML = `the Org Arr :-[${inputArr}] <br>
+  the even number :-[${filterArr}]`
+}
+let closefilter = () => {
+  document.getElementById("header-array-filter").style.display = "none"
+}
+let checkReduce = (event) => {
+  event.preventDefault()
+  let inputArr = document.getElementById("arrayReduce").value
+  let splitArr = inputArr.split(",")
+  let reduceOutput = splitArr.reduce((total, value) => {
+    return total * 1 + value * 1
+  })
+  document.getElementById(
+    "outputreduce"
+  ).innerHTML = `the org Arr :-[${inputArr}] <br>
+Additon of all number :-${reduceOutput}`
+}
+let closeReduce = () => {
+  document.getElementById("header-array-Reduce").style.display = "none"
+}
+
+let openSlice = () => {
+  document.getElementById("header-array-Slice").style.display = "block"
+}
+let closemethodSlice = () => {
+  document.getElementById("header-array-Slice").style.display = "none"
+}
+// flat
+let closemethodDFlat = () => {
+  document.getElementById("header-array-Flat").style.display = "none"
+}
+// Att
+let closeMethodDAt = () => {
+  document.getElementById("header-array-at").style.display = "none"
+}
+// shift unshift
+
+closeMethodShift = () => {
+  document.getElementById("header-array-Shift").style.display = "none"
+}
+
+// openUnShift = () => {
+//   document.getElementById("header-array-Shift").style.display = "none"
+// }
+
+let openUnShift = () => {
+  document.getElementById("header-array-UnShift").style.display = "block"
+  document.getElementById("header-array-Shift").style.display = "none"
+}
+let openShift = () => {
+  document.getElementById("header-array-UnShift").style.display = "none"
+  document.getElementById("header-array-Shift").style.display = "block"
+}
+let closeMethodUnShift = () => {
+  document.getElementById("header-array-UnShift").style.display = "none"
+}
+
+// sort
+let closeMethodSort = () => {
+  document.getElementById("header-array-sort").style.display = "none"
+}
+// concat
+let closeMethodConcat = () => {
+  document.getElementById("header-array-Concat").style.display = "none"
+}
+// Entries
+
+let closeMethodEnteies = () => {
+  document.getElementById("header-array-Entries").style.display = "none"
+}
+
+let entriesOpen = () => {
+  document.getElementById("header-array-Entries").style.display = "block"
+}
+// filter
+let filterOpen = () => {
+  document.getElementById("header-array-filter").style.display = "block"
+}
+// let closefilter = () => {
+//   document.getElementById("header-array-filter").style.display = "block"
+// }

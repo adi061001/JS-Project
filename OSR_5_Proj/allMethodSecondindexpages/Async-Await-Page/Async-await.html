@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet" />
+        <!-- Fontawsome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+        <!-- css File -->
+        <link rel="stylesheet" href="./Async-await.css">
+        <style>
+
+        </style>
+    </head>
+
+    <body>
+        <header class="head-1-array-len" id="header-async-await">
+            <div> <i class="fa-solid fa-xmark icon-close-method" onclick="closemethodAsync()"></i>
+                <div class="div-1-1-head-1-array-object">
+                    <div style="text-align: center;">
+                        <h3>Title : Async/Await</h3>
+                    </div>
+                    <div class="div-2-1-head-array">
+                        <h4>Description :-</h4>
+                        <div class="div-1-2-head-1-array">
+                            <p class="p-array-head-1">the Async await is used when we have to do any asynchronous programing</p>
+                        </div>
+                        <div style="height: 36px;">
+                            <ul class="ul-1-head-1-array">
+                                <li>Here we are check login user with passwaod & id</li>
+                            </ul>
+                        </div>
+                        <div class="div-form-head-object">
+                            <h2>Testing</h2>
+                            <form onsubmit="LoginCheck(event)" style="text-align: center;">
+                                <p>Id is :-emilys</p> <input type="text" placeholder="enter Your name " id="objLoginID_first">
+                                <p>Pass is :- emilyspass</p> <input type="text" placeholder="enter your passward" id="objLoginPass_second"><br> <button>Get login </button> </form>
+                            <div class="output-boc-div-array-head-1" style="color: black;">
+                                <h5 style="color: black;">OutPut :-</h5>
+                                <div class="output-last-div-array">
+                                    <div style="overflow: auto;">
+                                        <p id="inputUser" style="overflow:auto ; display: inline;"><br></p>
+                                    </div>
+                                    <div style="background-color: #ffe2a3; padding: 9px;">
+                                        <p style="margin-top: 15px" id="spacelength"></p>
+                                        <p> <span id="LoginOutput"> </span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <header class="head-1-array-len" id="header-async-await-dataget">
+            <div> <i class="fa-solid fa-xmark icon-close-method" onclick="closemethodAsyncGetApi()"></i>
+                <div class="div-1-1-head-1-array-object">
+                    <div style="text-align: center;">
+                        <h3>Title : Async/Await</h3>
+                    </div>
+                    <div class="div-2-1-head-array">
+                        <h4>Description :-</h4>
+                        <div class="div-1-2-head-1-array">
+                            <p class="p-array-head-1">the Async await is used when we have to do any asynchronous programing</p>
+                        </div>
+                        <div style="height: 36px;">
+                            <ul class="ul-1-head-1-array">
+                                <li>Here we are check Api of get Api </li>
+                            </ul>
+                        </div>
+                        <div class="div-form-head-object">
+                            <h2>Testing</h2>
+                            <form onsubmit="ApiCall(event)" style="text-align: center;">
+                                <p></p> <input type="text" placeholder="enter get APi " id="ApiGet_first"> <button>Get DATA</button> </form>
+                            <div class="output-boc-div-array-head-1" style="color: black;">
+                                <h5 style="color: black;">OutPut :-</h5>
+                                <div class="output-last-div-array">
+                                    <div style="overflow: auto;">
+                                        <p id="inputUser" style="overflow:auto ; display: inline;"><br></p>
+                                    </div>
+                                    <div style="background-color: #ffe2a3; padding: 9px;">
+                                        <p style="margin-top: 15px" id="spacelength"></p>
+                                        <p> <span id="getAPiData"> </span></p>
+                                        <table id="data-table" border="1">
+                                            <thead>
+                                                <tr>
+                                                    <th>ID</th>
+                                                    <th>Title</th>
+                                                    <th>Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="bodytable">
+                                                <!-- Dynamic rows will be added here -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <header class="head-1-array-len" id="header-async-await-Theory">
+            <div> <i class="fa-solid fa-xmark icon-close-method" onclick="closemethodAsyncclosetheory()"></i>
+                <div class="div-1-1-head-1-array-object">
+                    <div style="text-align: center;">
+                        <h3>Title : Async/Await</h3>
+                    </div>
+                    <div class="div-2-1-head-array">
+                        <h4>Description :-</h4>
+                        <div class="div-1-2-head-1-array">
+                            <p class="p-array-head-1">the Async await is used when we have to do any asynchronous programing</p>
+                        </div>
+                        <div style="height: 36px;">
+                            <ul class="ul-1-head-1-array">
+                                <li>The await keyword can only be used inside an async function. </li>
+                                <li>The await keyword makes the function pause the execution and wait for a resolved promise before it continues:</li>
+                                <li>The two arguments (resolve and reject) are pre-defined by JavaScript. We will not create them, but call one of them when the executor function is ready. Very often we will not need a reject function</li>
+                            </ul>
+                        </div>
+                        <div class="div-form-head-object">
+                            <h2>Testing</h2>
+                            <p></p>
+                            <div class="output-boc-div-array-head-1" style="color: black;">
+                                <h5 style="color: black;">how we can async function :-</h5>
+                                <div class="output-last-div-array">
+                                    <div style="overflow: auto;"> </div>
+                                    <div style="background-color: #ffe2a3; padding: 9px;">
+                                        <p style="margin-top: 15px" id="spacelength"></p>
+                                        <p> <span id="getAPiData"> <p id="inputUser" style="overflow:auto ; display: inline;"> async function asynFunc{<br> let myPromise = new Promise(function(resolve, reject) {<br> resolve("Async Function!!");<br> });<br> document.getElementById("demo").innerHTML = await myPromise;<br> } myDisplay();<br></p></span></p>
+                                        <br> <br>
+                                        <p>Output :- Async Function!! </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav class="nav_1">
+            <div class="nav-1-div-1" id="navbarscroll">
+                <div class="nav-1-div-2">
+                    <div class="div-log-1">
+                        <h1>J/</h1> <span>{script}</span> </div>
+                </div>
+                <div class="nav-1-div-3">
+                    <ul>
+                        <li><a href="./login.html">Home</a></li>
+                        <li> <a href="../../login.html">JScript</a> </li>
+                        <li><a href="../../index.html">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="sec-5" id="About" style="margin: 15px 0px 15px 0px; padding: 10px 0px 15px 0px;">
+            <div class="div-1-sec-5">
+
+                <div class="div-1-first-sec-5"> <img src="../../Image_index/js-initial-monogram-with-letter-creative-logo_1190297-24732.avif" alt="" />
+                    <h2 class="array-method">ASYNC/AWAIT</h2>
+                </div>
+                <div class="div-1-second-sec-5">
+                    <h1>What is Async Await?</h1>
+                    <p> An async function declaration creates an AsyncFunction object. Each time when an async function is called, it returns a new Promise which will be resolved with the value returned by the async function, or rejected with an exception
+                        uncaught within the async function. </p>
+                    <ul>
+                        <li>Async functions always return a promise. If the return value of an async function is not explicitly a promise, it will be implicitly wrapped in a promise. </li>
+                        <li>The await operator is used to wait for a Promise and get its fulfillment value. It can only be used inside an async function or at the top level of a module.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="sec-2" id="div_id_sec-2" onclick="open">
+            <div class="div-1-sec-2">
+                <div class="div-1-1-sec-1">
+                    <div class="div-111-sec-1">
+                        <h4>Theory</h4>
+                    </div>
+                    <div class="div-2-sec-2"> <button onclick="openAsyncTheory()"> <a >Check-In</a></a > </button> </div>
+                    <div class="div-3-sec-2">
+                        <p>the Async await is used when we have to do any asynchronous programing </p>
+                        <ul style="list-style: none; margin: 31px 0px 0px 0px; ">
+                            <li>
+                                <h3>create Async Function</h3>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="div-1-1-sec-1">
+                    <div class="div-111-sec-1">
+                        <h4>Async/Await</h4>
+                    </div>
+                    <div class="div-2-sec-2"> <button onclick="openAsync()"> <a >Check-In</a></a > </button> </div>
+                    <div class="div-3-sec-2">
+                        <p>the Async await is used when we have to do any asynchronous programing </p>
+                        <ul style="list-style: none; margin: 31px 0px 0px 0px; ">
+                            <li>
+                                <h3>Async /Await</h3>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="div-1-1-sec-1">
+                    <div class="div-111-sec-1">
+                        <h4>Fetch Api</h4>
+                    </div>
+                    <div class="div-2-sec-2"> <button onclick="openAsyncSecond()"> <a >Check-In</a></a > </button> </div>
+                    <div class="div-3-sec-2">
+                        <p>the Async await is used when we have to do any asynchronous programing </p>
+                        <ul style="list-style: none; margin: 31px 0px 0px 0px; ">
+                            <li>
+                                <h3>Try /Catch</h3>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </body>
+    <script src="./async-await.js"></script>
+
+    </html>
+</body>
+
+</html>
